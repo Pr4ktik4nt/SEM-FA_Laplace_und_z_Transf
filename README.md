@@ -1,6 +1,8 @@
 # SEM-FA_Laplace_und_z_Transf
 Seminar Fourier Analysis Laplace und Fourier Analysis
 
+## Laplacetransformation
+
 ### Problem bei der Fouriertransformation erläutern
 -> Wie wird es von Laplacetransformation gelöst?
 
@@ -19,5 +21,7 @@ Bsp.: Verknüpfung von Übertragungssystemen
 
 ### Sätze: Anfangswertsatz, Endwertsatz
 
+
+## z- Transformation
 
 
