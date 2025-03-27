@@ -6,3 +6,6 @@ Seminar Fourier Analysis Laplace und Fourier Analysis
 
 ### Definition der Laplacetransformation
 
+### allgemeine Korrespondenzen herleiten
+
+### 
