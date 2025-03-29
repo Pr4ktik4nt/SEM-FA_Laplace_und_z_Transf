@@ -12,11 +12,12 @@ Die Funktion strebt für die Grenzwerte gegen Unedlich:
 ![image](https://github.com/user-attachments/assets/ad6ea5a7-20dd-4535-adb4-86017fd0e846)
 (1, S.879)
 
--> Wie wird es von Laplacetransformation gelöst?
+## Wie wird es von Laplacetransformation gelöst?
 Das Problem lässt sich mit Hilfe der Laplace Transformatione lösen.
 Dafür braucht es die Erweiterung der Fourier Transformation um zwei Faktoren:
 ![image](https://github.com/user-attachments/assets/a3a74150-6fb6-4705-9315-0a6a3fa2bbbe)
 (1, S.879)
+(Warum kann man das machen? Wird die FUnktion so nicht zu einer völlig anderen???)
 
 Problematisch ist hier, dass beide Faktoren für
 ![image](https://github.com/user-attachments/assets/1ed4a1f5-6838-41ef-8ab6-196ca046239b) 
@@ -61,20 +62,48 @@ _wieder eine Funktion definiert, die **Laplace-Transformierte**_ F von f. "
 
 ### allgemeine Korrespondenzen herleiten
 
+![image](https://github.com/user-attachments/assets/7b0b61a0-c3e1-4064-83b6-3d93e6cb8170)
+(Tabell der allgemeinen Laplace Referenzen, 1, S.883)
+
 ### Rechenregeln der Laplacetransformation
+
+## Linearität
+![image](https://github.com/user-attachments/assets/d2619c72-65c8-4d56-b769-ade7a47c07db)
+Beispiel:
+![image](https://github.com/user-attachments/assets/c11a3dd5-7c99-4aa3-9f26-93e9e04d70a2)
+(1, S.883)
+
+Der Faktor wird also vor die Transformierte gezogen.
+
+## Streckung
+
+![image](https://github.com/user-attachments/assets/8c8b7a24-2995-4b92-9c37-1ffec6c46584)
+Beispiel:
+![image](https://github.com/user-attachments/assets/599e065e-868e-43c7-a7af-cd0357f821a3)
+(1, S.884)
+Der Faktor im Argument der zu transformierenden Funktion wird zum Faktor im Nenner der Transformierten.
+
+## Dämpfung
+
+![image](https://github.com/user-attachments/assets/1c24ad53-ed3b-4866-a3b1-10422a968af4)
+Beispiel:
+![image](https://github.com/user-attachments/assets/b71db76d-4334-42fe-a38d-712a87b9feb4)
+(1, S.884)
+(???)
+
+
 
 ### 
 
 ### Anwendung: Lösen von DGLs
-
-### Quellen
-
-Goebbels und Ritter, Mathematik verstehen und anwenden [1]
 
 ### In der Systemtheorie: 
 Bsp.: Verknüpfung von Übertragungssystemen
 
 ### Sätze: Anfangswertsatz, Endwertsatz
 
+### Quellen
+
+Goebbels und Ritter, Mathematik verstehen und anwenden [1]
 
 
