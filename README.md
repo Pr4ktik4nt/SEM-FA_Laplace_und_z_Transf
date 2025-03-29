@@ -41,16 +41,22 @@ Aufgrund dieser Bedingung kann man die untere Grenze zu Null setzen. Delta und j
 
 ### Definition der Laplacetransformation und allgemeine Bezeichnung
 
-"_Eine Funktion_ \( f : [0, \infty[ \to \mathbb{C} \) _heißt genau dann Laplace-transformierbar, wenn das Integral_
+"_Eine Funktion_ 
+![image](https://github.com/user-attachments/assets/8626c418-a000-4d8d-bad6-55a081d1375c)
 
-\[
-F(s) := \mathcal{L}f(s) := \int_0^{\infty} f(t)\exp(-st)\,dt 
-= \lim_{u \to \infty} \int_0^u f(t)\exp(-st)\,dt
-\]
+ _heißt genau dann Laplace-transformierbar, wenn das Integral_
 
-_für ein_ \( s \in \mathbb{C} \) _erklärt ist und konvergiert._
+![image](https://github.com/user-attachments/assets/e54f8f3a-2a78-4727-8871-6dbeeaac1ce8)
 
-_Ist eine Funktion_ \( f \) _Laplace-transformierbar, dann ist über_ \( F := \mathcal{L}f \) _wieder eine Funktion definiert, die **Laplace-Transformierte**_ \( F \) _von_ \( f \)_._ "
+_für ein_ 
+
+![image](https://github.com/user-attachments/assets/bd63eac6-67f3-467e-a57b-5ae946a5bb45)
+
+_erklärt ist und konvergiert._
+
+_Ist eine Funktion_ 
+![image](https://github.com/user-attachments/assets/7ed7c39e-e8c8-4d1c-b326-818071c9f107)
+_wieder eine Funktion definiert, die **Laplace-Transformierte**_ F von f. "
 
 
 ### allgemeine Korrespondenzen herleiten
