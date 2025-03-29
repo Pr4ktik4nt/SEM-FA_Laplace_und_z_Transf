@@ -91,7 +91,30 @@ Beispiel:
 (1, S.884)
 (???)
 
+## Ableitung
 
+Sei f auf ![image](https://github.com/user-attachments/assets/36090da3-a06c-49d1-8268-5299238abd3d) mindestens differenzierbar, wobei die Ableitung f' auf jeden endlichen Intervall nur endlich viele Sprungstellen besitzt (also stückweise stetig ist). Alternativ kann f auch stetig differenzierbar auf ![image](https://github.com/user-attachments/assets/0a162cd6-860a-4e86-b518-b1a62e80cd53) sein, dann kann folgende Rechenregel angewendet werden:
+
+![image](https://github.com/user-attachments/assets/b0d0ceca-dad2-442a-98d5-cd1b03a6e420)
+Beispiel:
+![image](https://github.com/user-attachments/assets/c28d881e-c6e9-4a48-91c1-3deb5a38cfcd)
+
+Bei höheren Ableitungen muss iterativ vorgegangen werden, wobei die Anfangsbedingungen einbezogen werden und mit steigender Potenz von s der Grad der Ableitung fällt. 
+
+![image](https://github.com/user-attachments/assets/aa6e3ac8-916e-48e8-b666-35ebee1a8140)
+(1, S.884)
+
+## Stammfunktion
+
+![image](https://github.com/user-attachments/assets/c90d69dd-bdcc-4990-8253-991a998d84c6)
+Beispiel:
+![image](https://github.com/user-attachments/assets/ecc26504-34ab-41e7-a78a-dea269a7fc90)
+
+## Faltung
+
+![image](https://github.com/user-attachments/assets/fe1e8dcd-6196-4542-a9cf-97fbcb2b30f6)
+Beispiel:
+![image](https://github.com/user-attachments/assets/7e1b7042-1166-4765-afbe-2e9e4adb3580)
 
 ### 
 
