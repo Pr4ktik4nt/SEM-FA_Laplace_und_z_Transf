@@ -172,9 +172,8 @@ Zahlenbeispiel:
 ### In der Systemtheorie: 
 
 Bsp.: DGL aufstellen und lösen aus Schaltung --> Können wir aus Sys entnehmen
-Bsp.: Verknüpfung von Übertragungssystemen
+Bsp.: Verknüpfung von Übertragungssystemen --> S.901 bei Goebbelito und können Bsp. aus Sys Übung nehmen
 
-### Sätze: Anfangswertsatz, Endwertsatz
 
 ### Quellen
 
