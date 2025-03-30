@@ -171,9 +171,39 @@ Zahlenbeispiel:
 
 ### In der Systemtheorie: 
 
-Bsp.: DGL aufstellen und lösen aus Schaltung --> Können wir aus Sys entnehmen
-Bsp.: Verknüpfung von Übertragungssystemen --> S.901 bei Goebbelito und können Bsp. aus Sys Übung nehmen
+#### Bsp.: DGL aufstellen und lösen aus Schaltung --> Können wir aus Sys entnehmen
+![image](https://github.com/user-attachments/assets/e5421ec6-64ad-4e1d-8c84-13231461f5ac)
+Bild elektrische Netzwerkelemente (Ahle, Systemtheorie)
+Beispielaufgabe zum AUfstellen einer DGL samt Lösung:
+![image](https://github.com/user-attachments/assets/6f979541-39c9-4149-a514-6fcdf6fd32ba)
+![image](https://github.com/user-attachments/assets/16be02ad-77d6-42df-b013-cfa173526ada)
+![image](https://github.com/user-attachments/assets/8d5ce3e5-01ea-4232-a5d6-a023c3ad42bb)
+![image](https://github.com/user-attachments/assets/5abacf97-db4c-4bf2-beaa-eefb29dde26c)
+![image](https://github.com/user-attachments/assets/673c4dd4-3575-4c71-a2b1-62e39da2d2df)
+![image](https://github.com/user-attachments/assets/b8bdee4d-3b86-4197-9a05-11dcf1aa223f)
+(Aufgabe 2.11 aus Ahle's Übungen)
 
+#### Bsp.: Verknüpfung von Übertragungssystemen - Transformation in den Frequenzbereich ohne AUfstellen einer DGL --> S.901 bei Goebbelito und können Bsp. aus Sys Übung nehmen
+
+Übertragungssysteme könne in Reihe oder parallel zueinander angeordnet sein, so wie eine Rückkopplung des Ausgangs auf den Eingang sein.
+
+#### In Reihe
+
+Werden mehrere Übertragungssysteme hintereinandergeschaltet, wobei das Ausgangssignal eines Systems – unter passenden Anfangsbedingungen – als Eingangssignal für das nächste dient, so ergibt sich ein neues Gesamtsystem. Die Übertragungsfunktion dieses Gesamtsystems entspricht dem Produkt der Übertragungsfunktionen der Einzelsysteme.
+
+#### Parallel
+
+In der Parallelschaltung greift das DIstributivgesetz:
+![image](https://github.com/user-attachments/assets/ccb92bfc-6db6-4472-91fb-32df55f5413b)
+(1, S.902)
+
+#### Rückkopplung
+
+Liegt eine Rückkopplung ohne zeitlichen Verzug vor, so wird vom transformierten Eingangssignal das durch die Rückkopplung entstehende Signal subtrahiert.
+
+![image](https://github.com/user-attachments/assets/d5ebaa89-a583-4dce-891a-5d5f57534539)
+(1, S.902)
+Mithilfe der zuvor eingeführten Regeln zur Verknüpfung von Übertragungsfunktionen lässt sich eine Schaltung direkt in eine einfach lösbare algebraische Gleichung überführen. Dabei erfolgt die Transformation unmittelbar in den Frequenzbereich, im Gegensatz zur früheren Vorgehensweise, bei der zunächst eine Differenzialgleichung aus der Schaltung abgeleitet und erst anschließend transformiert wurde.
 
 ### Quellen
 
