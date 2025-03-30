@@ -138,6 +138,7 @@ So ergibt sich die Lösung der Rücktransformation:
 Beispiel mit Zahlenwerten und Exponentialfunktion (Habe ein Beispiel aus dem Buch genommen. Vielleicht können wir hier eins aus Systemtheorie einfügen, sodass wir nicht bei allem auf Göbbis Buch zurückgreifen):
 
 ![image](https://github.com/user-attachments/assets/aa091d58-f0fb-4c22-a11c-75b89eed6104)
+Zur Rücktransformation kann man hier auch die Korrespondenztabelle heranziehen.
 
 #### Unterschied Anwedung der Ableitungsregel auf Fouriertransformation vs Laplace Transformation
 
@@ -151,7 +152,26 @@ Will man nur bestimmte Informationen aus einer Laplace-Transformationen ziehen, 
 ![image](https://github.com/user-attachments/assets/b5bb9594-90a0-49e0-a882-9fc1abcb93c2)
 (1, S.892)
 
+Existiert ein Grenzwert, kann man beispielsweise in der Regelungstechnik davon sprechen, dass eine Systemstabilität vorherrscht.
+
+Herleitung des Anfangswertsatzes (über die Ableitungsregel):
+![image](https://github.com/user-attachments/assets/6f95d7dc-b85a-4a9a-9667-15558c573ea0)
+(1, S.891)
+Bedingung dafür, dass der Term für die Laplace Transformierte von f' gegen Null geht, ist dass f'(t)diese nicht zu schnell wächst (beschränkt oder höchstens exponentiell):
+![image](https://github.com/user-attachments/assets/784baa8f-ccfd-4729-873c-2dc796023776)
+Der Term geht gegen Null weil e^(-st) sehr schnell gegen Null strebt.
+(Beschränkt meint in Bezug zu Exponentiell weniger schnell wachsend und exponentiell höchstens e^t, nicht mehr bspw. e^(t^2).)
+
+Herleitung des Endwertsatzes:
+![image](https://github.com/user-attachments/assets/bfc1b570-4835-4508-95ff-cc874cb32bbc)
+Diese Herleitung basiert ebenfalls auf die Ableitungsregel. (AUsführliche genauere Herleitung S.893)
+Zahlenbeispiel:
+![image](https://github.com/user-attachments/assets/ac882346-8b93-4b0f-aca5-5a84f3b1a315)
+(1, S.894)
+
 ### In der Systemtheorie: 
+
+Bsp.: DGL aufstellen und lösen aus Schaltung --> Können wir aus Sys entnehmen
 Bsp.: Verknüpfung von Übertragungssystemen
 
 ### Sätze: Anfangswertsatz, Endwertsatz
