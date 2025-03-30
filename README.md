@@ -143,6 +143,14 @@ Beispiel mit Zahlenwerten und Exponentialfunktion (Habe ein Beispiel aus dem Buc
 
 Die Fourier-Transformation unterscheidet sich in Bezug auf die Ableitungsregel von der Laplace-Transformation, da bei ihr keine Anfangsbedingungen berücksichtigt werden – was darauf zurückzuführen ist, dass über den gesamten Zahlenraum von −∞ bis ∞ integriert wird, statt wie bei der Laplace-Transformation ab null. Außerdem sind Funktionen mit exponentiellem Wachstum zwar Laplace-, aber nicht Fourier-transformierbar. Dadurch lassen sich bestimmte Lösungen mit der Fourier-Transformation nicht erfassen. Da exponentielle Funktionen jedoch häufig als Grundbausteine in Lösungen von Differenzialgleichungen auftreten, bietet die Laplace-Transformation hier einen klaren Vorteil. (1, S.891)
 
+### Grenzwertsätze als Alternative zur Rücktransformation
+
+Will man nur bestimmte Informationen aus einer Laplace-Transformationen ziehen, wie zum Beispiel den Anfangswert und den Endwert, kann man statt der Laplace Rücktransformation auch die Grenzwertsätze auf die Laplace Transformierte anweden:
+
+![image](https://github.com/user-attachments/assets/13393426-abe1-43c6-a00c-a8e651218e29)
+![image](https://github.com/user-attachments/assets/b5bb9594-90a0-49e0-a882-9fc1abcb93c2)
+(1, S.892)
+
 ### In der Systemtheorie: 
 Bsp.: Verknüpfung von Übertragungssystemen
 
