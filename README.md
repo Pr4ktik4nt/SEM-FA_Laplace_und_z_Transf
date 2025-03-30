@@ -63,7 +63,7 @@ _wieder eine Funktion definiert, die **Laplace-Transformierte**_ F von f. "
 ### allgemeine Korrespondenzen herleiten
 
 ![image](https://github.com/user-attachments/assets/7b0b61a0-c3e1-4064-83b6-3d93e6cb8170)
-(Tabell der allgemeinen Laplace Referenzen, 1, S.883)
+(Tabelle der allgemeinen Laplace Referenzen, 1, S.883)
 
 ### Rechenregeln der Laplacetransformation
 
@@ -119,6 +119,29 @@ Beispiel:
 ### 
 
 ### Anwendung: Lösen von DGLs
+
+(Für die Informatiker:) Was sind Differentialgleichungen? Differentialgleichungen sind solche Gleichungen, die aus Ableitungen derselben Funktion mit verschieden hohem Rang bestehen.
+Gegeben sein müssen dafür die Anfangsbedingungen bis zur Ableitung vor der mit dem höchsten Rang.
+Veranschaulichen lässt sich das an einem allgemeinem Beispiel einer DGL mit der zweiten Ableitung als höchste Ableitung. 
+![image](https://github.com/user-attachments/assets/2e095794-476c-4660-b1a6-e9b8922bec7c)
+(1, S.886)
+Nach Anwenden der Ableitungs- und Linearitätsregel erhält man die Laplace Transformierte. Auf die rechte Seite muss entsprechend die Korrespondenztabelle angewendet werden.
+![image](https://github.com/user-attachments/assets/8a07e35d-8eee-412f-9f8d-6e23ffbd637f)
+
+Durch Rücktransformation erhält man dann eine Lösung des Ursprungsproblems. Wenn man im Laplace-Bereich zwei Funktionen multipliziert, entspricht das im Zeitbereich einer Faltung dieser Funktionen. Man wendet dabei das so genannte Faltungstheorem an:
+![image](https://github.com/user-attachments/assets/a13d322b-63bb-4eb9-99e1-af4ecbb7d816)
+So ergibt sich die Lösung der Rücktransformation:
+![image](https://github.com/user-attachments/assets/8ab4c2f2-1728-4f69-8142-f9988bf70b2c)
+![image](https://github.com/user-attachments/assets/293eae9a-9a0e-4ba5-8012-507f1da40909)
+(1, S.886)
+
+Beispiel mit Zahlenwerten und Exponentialfunktion (Habe ein Beispiel aus dem Buch genommen. Vielleicht können wir hier eins aus Systemtheorie einfügen, sodass wir nicht bei allem auf Göbbis Buch zurückgreifen):
+
+![image](https://github.com/user-attachments/assets/aa091d58-f0fb-4c22-a11c-75b89eed6104)
+
+## Unterschied Anwedung der Ableitungsregel auf Fouriertransformation vs Laplace Transformation
+
+Die Fourier-Transformation unterscheidet sich in Bezug auf die Ableitungsregel von der Laplace-Transformation, da bei ihr keine Anfangsbedingungen berücksichtigt werden – was darauf zurückzuführen ist, dass über den gesamten Zahlenraum von −∞ bis ∞ integriert wird, statt wie bei der Laplace-Transformation ab null. Außerdem sind Funktionen mit exponentiellem Wachstum zwar Laplace-, aber nicht Fourier-transformierbar. Dadurch lassen sich bestimmte Lösungen mit der Fourier-Transformation nicht erfassen. Da exponentielle Funktionen jedoch häufig als Grundbausteine in Lösungen von Differenzialgleichungen auftreten, bietet die Laplace-Transformation hier einen klaren Vorteil.
 
 ### In der Systemtheorie: 
 Bsp.: Verknüpfung von Übertragungssystemen
