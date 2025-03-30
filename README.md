@@ -12,7 +12,7 @@ Die Funktion strebt für die Grenzwerte gegen Unedlich:
 ![image](https://github.com/user-attachments/assets/ad6ea5a7-20dd-4535-adb4-86017fd0e846)
 (1, S.879)
 
-## Wie wird es von Laplacetransformation gelöst?
+#### Wie wird es von Laplacetransformation gelöst?
 Das Problem lässt sich mit Hilfe der Laplace Transformatione lösen.
 Dafür braucht es die Erweiterung der Fourier Transformation um zwei Faktoren:
 ![image](https://github.com/user-attachments/assets/a3a74150-6fb6-4705-9315-0a6a3fa2bbbe)
@@ -67,7 +67,7 @@ _wieder eine Funktion definiert, die **Laplace-Transformierte**_ F von f. "
 
 ### Rechenregeln der Laplacetransformation
 
-## Linearität
+#### Linearität
 ![image](https://github.com/user-attachments/assets/d2619c72-65c8-4d56-b769-ade7a47c07db)
 Beispiel:
 ![image](https://github.com/user-attachments/assets/c11a3dd5-7c99-4aa3-9f26-93e9e04d70a2)
@@ -75,7 +75,7 @@ Beispiel:
 
 Der Faktor wird also vor die Transformierte gezogen.
 
-## Streckung
+#### Streckung
 
 ![image](https://github.com/user-attachments/assets/8c8b7a24-2995-4b92-9c37-1ffec6c46584)
 Beispiel:
@@ -83,7 +83,7 @@ Beispiel:
 (1, S.884)
 Der Faktor im Argument der zu transformierenden Funktion wird zum Faktor im Nenner der Transformierten.
 
-## Dämpfung
+#### Dämpfung
 
 ![image](https://github.com/user-attachments/assets/1c24ad53-ed3b-4866-a3b1-10422a968af4)
 Beispiel:
@@ -91,7 +91,7 @@ Beispiel:
 (1, S.884)
 (???)
 
-## Ableitung
+#### Ableitung
 
 Sei f auf ![image](https://github.com/user-attachments/assets/36090da3-a06c-49d1-8268-5299238abd3d) mindestens differenzierbar, wobei die Ableitung f' auf jeden endlichen Intervall nur endlich viele Sprungstellen besitzt (also stückweise stetig ist). Alternativ kann f auch stetig differenzierbar auf ![image](https://github.com/user-attachments/assets/0a162cd6-860a-4e86-b518-b1a62e80cd53) sein, dann kann folgende Rechenregel angewendet werden:
 
@@ -104,13 +104,13 @@ Bei höheren Ableitungen muss iterativ vorgegangen werden, wobei die Anfangsbedi
 ![image](https://github.com/user-attachments/assets/aa6e3ac8-916e-48e8-b666-35ebee1a8140)
 (1, S.884)
 
-## Stammfunktion
+#### Stammfunktion
 
 ![image](https://github.com/user-attachments/assets/c90d69dd-bdcc-4990-8253-991a998d84c6)
 Beispiel:
 ![image](https://github.com/user-attachments/assets/ecc26504-34ab-41e7-a78a-dea269a7fc90)
 
-## Faltung
+#### Faltung
 
 ![image](https://github.com/user-attachments/assets/fe1e8dcd-6196-4542-a9cf-97fbcb2b30f6)
 Beispiel:
@@ -139,9 +139,9 @@ Beispiel mit Zahlenwerten und Exponentialfunktion (Habe ein Beispiel aus dem Buc
 
 ![image](https://github.com/user-attachments/assets/aa091d58-f0fb-4c22-a11c-75b89eed6104)
 
-## Unterschied Anwedung der Ableitungsregel auf Fouriertransformation vs Laplace Transformation
+#### Unterschied Anwedung der Ableitungsregel auf Fouriertransformation vs Laplace Transformation
 
-Die Fourier-Transformation unterscheidet sich in Bezug auf die Ableitungsregel von der Laplace-Transformation, da bei ihr keine Anfangsbedingungen berücksichtigt werden – was darauf zurückzuführen ist, dass über den gesamten Zahlenraum von −∞ bis ∞ integriert wird, statt wie bei der Laplace-Transformation ab null. Außerdem sind Funktionen mit exponentiellem Wachstum zwar Laplace-, aber nicht Fourier-transformierbar. Dadurch lassen sich bestimmte Lösungen mit der Fourier-Transformation nicht erfassen. Da exponentielle Funktionen jedoch häufig als Grundbausteine in Lösungen von Differenzialgleichungen auftreten, bietet die Laplace-Transformation hier einen klaren Vorteil.
+Die Fourier-Transformation unterscheidet sich in Bezug auf die Ableitungsregel von der Laplace-Transformation, da bei ihr keine Anfangsbedingungen berücksichtigt werden – was darauf zurückzuführen ist, dass über den gesamten Zahlenraum von −∞ bis ∞ integriert wird, statt wie bei der Laplace-Transformation ab null. Außerdem sind Funktionen mit exponentiellem Wachstum zwar Laplace-, aber nicht Fourier-transformierbar. Dadurch lassen sich bestimmte Lösungen mit der Fourier-Transformation nicht erfassen. Da exponentielle Funktionen jedoch häufig als Grundbausteine in Lösungen von Differenzialgleichungen auftreten, bietet die Laplace-Transformation hier einen klaren Vorteil. (1, S.891)
 
 ### In der Systemtheorie: 
 Bsp.: Verknüpfung von Übertragungssystemen
