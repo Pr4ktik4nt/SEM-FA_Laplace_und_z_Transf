@@ -91,7 +91,7 @@ Der Faktor im Argument der zu transformierenden Funktion wird zum Faktor im Nenn
 Beispiel:
 ![image](https://github.com/user-attachments/assets/b71db76d-4334-42fe-a38d-712a87b9feb4)
 (1, S.884)
-(???)
+(s+1) ist hier die neue Laufvariable (statt s). So entsteht (s+1)-1. 
 
 #### Ableitung
 
