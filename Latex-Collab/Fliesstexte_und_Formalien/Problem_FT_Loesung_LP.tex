@@ -1,0 +1,43 @@
+\section{Problem der Fourier Transformation}
+
+Die Fourier Tansformaiton wird dazu genutzt die Ähnlichkeit eines Signals zu harmonischen Schwingungen unterschiedlicher Frequenzen zu bestimmen. Sie stößt jedoch an ihre Grenzen, wenn ihr Benutzer versucht ein Signal zu analysieren, welches im Unendlichen nicht gegen Null strebt.
+
+\begin{equation}
+    \int_{-\infty}^{\infty} |f(t)| \, dt < \infty
+    \label{eq:abs_integrierbarkeit}
+    \end{equation}
+    
+    \cite{buch1}
+
+Häufig tritt dieses Problem beim lösen von Differentialgleichungen im Zeitbereich auf. 
+In den sich ergebenden Lösungen sind zu einem großen Teil Exponentialfunktionen enthalten. 
+Wollen wir diese über Fourier Transformation lösen stoßen wir auf das Problem, dass mindestens einer der stationären Endwerte ungleich Null ist.
+
+\begin{equation}
+    f(t) = e^t
+    \label{eq:exp_funktion}
+    \end{equation}
+
+    \cite{buch1}
+
+Versucht man die Funktion via Fourier zu transfomieren beläuft sich ihr Grenzwert gegen 
+$\infty$. 
+
+\begin{equation}
+    \int_{-\infty}^{\infty} e^t \, dt
+    \label{eq:exp_function_infty}
+    \end{equation}
+    
+    \cite{buch1}
+
+\subsection{Lösungsansatz durch Laplace Transformation}
+
+Ein Mittel zur Lösung dieses Problems ist das Anweden der Laplace Transformation. Um diese zu verwenden, muss man die Fourier Transformation um zwei Faktoren erweitern:
+
+\begin{equation}
+    \int_{-\infty}^{\infty} f(t) e^{-\delta t} e^{-j \omega t} \, dt
+    \label{eq:fourier_modifiziert}
+    \end{equation}
+    \cite{buch1}
+
+Der im Vergleich zur Fourier Transformation zusätzliche Faktor $e^{-\delta t}$ dämpft unsere Funktion, sodass schließlich Null als stationärer Endwert erreicht wird. 
