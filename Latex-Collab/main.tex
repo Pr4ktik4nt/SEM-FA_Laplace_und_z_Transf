@@ -1,4 +1,4 @@
-\documentclass{article} %Form der Datei, die angenommen wird
+\documentclass[titlepage]{article} %Form der Datei, die angenommen wird
 \usepackage{amsmath} %Formeln schreiben
 \usepackage{amssymb} %Formeln schreiben
 \usepackage{hyperref} %Verlinkungen einbinden
@@ -7,7 +7,58 @@
 \usepackage{fancybox}
 \usepackage{comment}
 
+
+% Layout-Einstellungen
+\frenchspacing                  % Einheitlicher Abstand nach Satzzeichen (keine extra Leerzeichen)
+\tolerance=9000                 % Erlaubt größere Lücken zwischen Wörtern, um unschöne Umbrüche zu vermeiden
+\usepackage{parskip}            % Entfernt Absatzeinrückung und fügt Abstand zwischen Absätzen hinzu
+\usepackage{lmodern}            % Schriftart Latin Modern
+\usepackage{titlesec}           % Benutzerdefinierte Überschriften
+\usepackage{lastpage}           % Gesamtseitenzahl abrufen
+\usepackage{fancyhdr}           % Für individuelle Kopf- und Fußzeilen -> s.u.
+\usepackage{geometry}           % Ermöglicht benutzerdefinierte Seitenränder
+    \geometry{a4paper, left=25mm, right=25mm, top=3.5cm, bottom=2.5cm} % Ränder setzen
+
+% Literaturverzeichnis
+\usepackage{cite}               % Verbessert Zitierstil für BibTeX
+
 \begin{document} %ab diesem Punkt wird eine PDF erstellt
 
+%Deckblatt
+\input{Fliesstexte_und_Formalien/deckblatt.tex} %Deckblatt
 
-\section{}
+% Kopf- und Fußzeilen
+\pagestyle{fancy}   
+
+\newpage
+
+% Aktiviert individuelle Kopf- und Fußzeilen
+\fancyfoot{}                                         % Löscht alle Standard-Fußzeilen
+\fancyfoot[C]{Seite \thepage~von~\pageref*{LastPage}} % Fußzeile mit "Seite X von Y"     % Praktisch auch:[RO,LE]
+\fancyfoot[R]{Lukas K., Ben Z.}                     % Rechte Seite: Autorname
+\fancyfoot[L]{Laplace- und z-Transformation}                    % Linke Seite: Dokumentname#
+\renewcommand{\footrulewidth}{0.4pt}                 % Linie über der Fußzeile
+\fancyhead{}                                         % Löscht alle Standard-Kopfzeilen
+\renewcommand{\headrulewidth}{0.4pt}                 % Linie unter der Kopfzeile
+%\fancyhead[L]{\includegraphics[width=1.2cm]{anlagen/bilder/logo.png}} % Logo links in der Kopfzeile
+\fancyhead[R]{\nouppercase{\leftmark}}                             % Kopfzeile: Kapitelname
+
+
+% Inhaltsverzeichnis
+\setcounter{tocdepth}{3}                            % Inhaltsverzeichnis bis zur Ebene 3 anzeigen
+\setcounter{secnumdepth}{3}                         % Nummerierung bis zur Ebene 3
+\tableofcontents
+\newpage
+
+\input{Fliesstexte_und_Formalien/Problem_FT_Loesung_LP.tex} 
+
+
+% Literaturverzeichnis
+\newpage
+\bibliographystyle{IEEEtran}  % Stil des Literaturverzeichnisses
+\bibliography{literatur}      % Verknüpfung mit literatur.bib
+\nocite{*}                    % Alle Einträge aus literatur.bib anzeigen
+\label{sec:literaturverzeichnis}
+
+
+\end{document}
