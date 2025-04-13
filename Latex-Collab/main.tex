@@ -34,14 +34,12 @@
 
 % Aktiviert individuelle Kopf- und Fußzeilen
 \fancyfoot{}                                         % Löscht alle Standard-Fußzeilen
-\fancyfoot[C]{Seite \thepage~von~\pageref*{LastPage}} % Fußzeile mit "Seite X von Y"     % Praktisch auch:[RO,LE]
-\fancyfoot[R]{Lukas K., Ben Z.}                     % Rechte Seite: Autorname
-\fancyfoot[L]{Laplace- und z-Transformation}                    % Linke Seite: Dokumentname#
 \renewcommand{\footrulewidth}{0.4pt}                 % Linie über der Fußzeile
 \fancyhead{}                                         % Löscht alle Standard-Kopfzeilen
 \renewcommand{\headrulewidth}{0.4pt}                 % Linie unter der Kopfzeile
 %\fancyhead[L]{\includegraphics[width=1.2cm]{anlagen/bilder/logo.png}} % Logo links in der Kopfzeile
 \fancyhead[R]{\nouppercase{\leftmark}}                             % Kopfzeile: Kapitelname
+\fancyhead[L]{Seite \thepage~von~\pageref*{LastPage}} % Kopfzeile: Seitenzahl
 
 
 % Inhaltsverzeichnis
@@ -51,8 +49,10 @@
 \newpage
 
 \input{Fliesstexte_und_Formalien/Problem_FT_Loesung_LP.tex} 
+\newpage
 
 
+\input{Fliesstexte_und_Formalien/Einfuehrung_z_Trafo.tex}
 % Literaturverzeichnis
 \newpage
 \bibliographystyle{IEEEtran}  % Stil des Literaturverzeichnisses

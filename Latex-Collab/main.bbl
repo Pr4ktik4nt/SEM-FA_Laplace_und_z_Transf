@@ -23,4 +23,9 @@
 \bibitem{buch1}
 S.~R. Steffen~Goebbels, \emph{Mathematik verstehen und anwenden 3. Auflage}.\hskip 1em plus 0.5em minus 0.4em\relax Beispiel-Verlag, 2018.
 
+\bibitem{book2}
+\BIBentryALTinterwordspacing
+H.~Ulrich and S.~Ulrich, \emph{Diskrete Fourier Transformation (DFT)}.\hskip 1em plus 0.5em minus 0.4em\relax Wiesbaden: Springer Fachmedien Wiesbaden, 2022. [Online]. Available: \url{https://doi.org/10.1007/978-3-658-31877-2_6}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
