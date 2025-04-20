@@ -1,0 +1,80 @@
+\section{Grenzwertsätze als Alternative zur Rücktransformation}
+
+Will man nur bestimmte Informationen aus einer Laplace Transformation ziehen, wie zum Beispiel den ANfangswert und den Endwert, kann man statt der Laplace Rücktransformation auch die Grenzwertsätze auf die Laplace Transformierte anweden. Mit Anfangs- und Endwertsatz versucht man das Verhalten der Funktion an den Rändern $\lim_{t \to 0^+} f(t)$ und $\lim_{t \to \infty} f(t)$
+bestimmen.
+
+\textbf{Anfangswertsatz}
+\begin{quote}
+    Sei die Funktion \( f : [0,\infty[ \rightarrow \mathbb{C} \) auf \( [0,\infty[ \) stetig und von höchstens exponentiellem Wachstum. Dann gilt (\( s \in \mathbb{R} \)):
+    \[
+    \lim_{s \to \infty} sF(s) = f(0).
+    \]
+    \cite{buch1}
+\end{quote}
+
+
+\textbf{Endwertsatz}
+\begin{quote}
+    \textit{Sei die Funktion \( f : [0,\infty[ \rightarrow \mathbb{C} \) stetig auf \( [0,\infty[ \), so dass der Grenzwert \( \lim_{t \to \infty} f(t) = c \) als (komplexe) Zahl existiert. Dann gilt (\( s \in \mathbb{R} \)):}
+    
+    \[
+    \lim_{s \to 0^+} sF(s) = \lim_{t \to \infty} f(t).
+    \]
+    \cite{buch1}
+\end{quote}
+
+
+Existiert ein Grenzwert, kann man beispielsweise in der Regelungstechnik davon sprechen, dass eine Systemstabilität vorherrscht.
+
+Herleitung des Anfangswertsatzes (über die Ableitungsregel):
+\begin{quote}
+    \[
+    \lim_{s \to \infty} sF(s) = \lim_{s \to \infty} s[\mathcal{L}(f)](s) = \lim_{s \to \infty} [\mathcal{L}(f')](s) + f(0) = f(0).
+    \]
+    \cite[S. 891]{buch1}
+\end{quote}
+
+Bedingung dafür, dass der Term für die Laplace-Transformierte von \( f' \) gegen Null geht, ist, dass \( f'(t) \) nicht zu schnell wächst (beschränkt oder höchstens exponentiell): 
+\[
+\mathcal{L}(f')(s) = \int_0^{\infty} f'(t)\, e^{-st} \, dt.
+\]
+Der Term geht gegen Null, weil \( e^{-st} \) gegen Null geht. Eine Funktion \( f'(t) \), deren Laplace-Transformierte gegen Null strebt, muss so beschaffen sein, dass sie nicht zu schnell wächst. Genauer: Sie darf höchstens exponentiell wachsen, also z.\,B. wie \( e^{t} \), jedoch nicht schneller – etwa wie \( e^{t^2} \). Der Ausdruck \textit{beschränkt oder höchstens exponentiell wachsend} bezieht sich genau auf dieses Verhalten: Funktionen, die langsamer wachsen als eine Exponentialfunktion, sind in diesem Sinne ebenfalls erlaubt.
+
+Herleitung des Endwertsatzes:
+\begin{align*}
+    \lim_{s \to 0^+} sF(s)
+    &= \lim_{s \to 0^+} [\mathcal{L}(f')](s) + f(0) \\
+    &= \lim_{s \to 0^+} \int_0^{\infty} f'(t) e^{-st} \, dt + f(0) \\
+    &= \int_0^{\infty} f'(t) \, dt + f(0) \\
+    &= \lim_{u \to \infty} [f(t)]_0^u + f(0) \\
+    &= \lim_{u \to \infty} f(u)
+    \end{align*}
+    \cite[S. 892]{buch1}
+
+Diese Herleitung basiert auf der Ableitungsregel.
+Im folgenden ein Zahlenbeispiel:
+Für \( f(t) = 1 + 3e^{-t} \) bekommt man für den unteren Grenzwert \( f(0) = 4 \) und für den oberen \( \lim_{t \to \infty} f(t) = 1 \). 
+Die gleichen Werte erhalten wir über den Anfangs- und Endwertsatz:
+
+Mit Hilfe der Korrespondenztabelle lässt sich die Laplace Transformierte bestimmen:
+\[
+F(s) = \frac{1}{s} + \frac{3}{s + 1}.
+\]
+\[
+\lim_{s \to \infty} sF(s) = \lim_{s \to \infty} \left[ 1 + \frac{3s}{s + 1} \right] = 4 
+\quad \text{und} \quad 
+\lim_{s \to 0^+} sF(s) = \lim_{s \to 0^+} \left[ 1 + \frac{3s}{s + 1} \right] = 1.
+\] \cite[S. 894]{buch1}
+
+
+
+
+
+
+
+
+
+    
+
+    
+

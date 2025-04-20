@@ -1,2 +1,30 @@
 \contentsline {section}{\numberline {1}Problem der Fourier Transformation}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Lösungsansatz durch Laplace Transformation}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Definition der Laplace Transformation}{3}{section.2}%
+\contentsline {section}{\numberline {3}Allgemeine Korrespondenzen}{3}{section.3}%
+\contentsline {section}{\numberline {4}Rechenregeln der Laplace Transformation}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Linearität}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Streckung}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Dämpfung}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Ableitung}{4}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Stammfunktion}{5}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Faltung}{5}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Anwedung: Lösen von Differentialgleichungen}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Unterschied in der Anwendung der Ableitungsregel auf die Fouriertransformation vs die Laplace Transformation}{7}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Grenzwertsätze als Alternative zur Rücktransformation}{7}{section.6}%
+\contentsline {section}{\numberline {7}Anwedung der Laplace Transformation in der Systemtheorie und Regelungstechnik}{8}{section.7}%
+\contentsline {paragraph}{Beispielaufgabe:}{10}{equation.28}%
+\contentsline {paragraph}{Masche 1:}{10}{equation.28}%
+\contentsline {paragraph}{Masche 2:}{10}{equation.28}%
+\contentsline {paragraph}{Charakteristische Gleichung:}{10}{equation.28}%
+\contentsline {paragraph}{Eigenwerte:}{10}{equation.28}%
+\contentsline {paragraph}{Lösung der homogenen DGL:}{10}{equation.28}%
+\contentsline {paragraph}{Ansatz partikuläre Lösung:}{10}{equation.28}%
+\contentsline {paragraph}{Einsetzen in DGL:}{10}{equation.28}%
+\contentsline {paragraph}{Allgemeine Lösung der DGL:}{11}{equation.28}%
+\contentsline {paragraph}{Konstanten aus Anfangsbedingungen:}{11}{equation.28}%
+\contentsline {paragraph}{Endgültige Lösung:}{11}{equation.28}%
+\contentsline {subsection}{\numberline {7.1}Verknüpfung von Übertragungssystemen}{11}{subsection.7.1}%
+\contentsline {paragraph}{In Reihe:}{11}{subsection.7.1}%
+\contentsline {paragraph}{Parallel:}{11}{subsection.7.1}%
+\contentsline {paragraph}{Rückkopplung:}{11}{subsection.7.1}%

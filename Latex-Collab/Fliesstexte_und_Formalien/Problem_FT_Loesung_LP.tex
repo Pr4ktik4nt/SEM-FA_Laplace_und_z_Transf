@@ -41,3 +41,35 @@ Ein Mittel zur Lösung dieses Problems ist das Anweden der Laplace Transformatio
     \cite{buch1}
 
 Der im Vergleich zur Fourier Transformation zusätzliche Faktor $e^{-\delta t}$ dämpft unsere Funktion, sodass schließlich Null als stationärer Endwert erreicht wird. 
+
+Deshalb ist folgende Bedingung anzugeben:
+
+\begin{equation}
+    f(t) = 0 \quad \text{für } t < 0
+    \label{eq:ft_bedingung}
+    \end{equation}
+    \cite{buch1}
+
+Da wir in der Praxis häufig Differentialgleichungen mit der Laplace Transformation lösen wollen und diese meist ein Anfangswertproblem darstellen, welches erst ab t=0 startet, ist diese Bedingung in vielen realen Anwendungsbeispielen gegeben. Beispielsweise:
+
+\begin{equation}
+    f(t) = 
+    \begin{cases}
+    e^t, & \text{für } t \geq 0 \\
+    0,   & \text{für } t < 0
+    \end{cases}
+    \label{eq:ft_definition}
+    \end{equation}
+    \cite{buch1}
+
+Aufgrund dieser Bedingung kann man die untere Grenze Null setzen. Dabei ist $\delta + j\omega$ = s definiert.
+
+\begin{equation}
+    \int_{-\infty}^{\infty} f(t) e^{-\delta t} e^{-j \omega t} \, dt
+    = \int_{0}^{\infty} f(t) e^{-\delta t} e^{-j \omega t} \, dt
+    = \int_{0}^{\infty} f(t) \exp\left(-(\underbrace{\delta + j\omega}_{=:s})t\right) \, dt
+    \label{eq:mod_fourier}
+    \end{equation}
+    \cite{buch1}
+
+
