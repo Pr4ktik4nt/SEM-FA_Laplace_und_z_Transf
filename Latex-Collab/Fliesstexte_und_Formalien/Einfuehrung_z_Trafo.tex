@@ -1,0 +1,19 @@
+\section{z-Transformation}
+\subsection{Einleitung der z-Transformation}
+Die z-Transformation ist eine diskrete Variante der Laplace-Transformation. Sie erlaubt im Gegensatz zur DFT auch die Analyse von instabilen Systemen. Sie findet Anwendunng in der Analyse zeitdiskreter Signale und Systeme \cite[S.231]{book2}. (+Zitiert aus Gref SIG Vorlesung)
+
+Zur Transformation werden kontinuierliche, kausale, stetige Funktionen $x(t)$ zu äquidistanten Zeitpunkten $t=k \cdot T$ abgetastet. Dabei gilt $x(t) = 0$ für $t<0$.
+
+Die abgetasteten Funktionswerte werden wie folgt dargestellt:
+\begin{equation}
+    x(t)|_{t=kT} = x(kT) = x[k] \quad \text{mit } k \in \mathbb{Z}
+    \label{eq:abgetastete_funktion}
+\end{equation}
+
+Die Definition der z-Transformation lautet:
+
+\begin{equation}
+    \label{eq:z_transformation_definition}
+    \mathcal{Z}\{x[k]\} = \sum_{k=0}^{\infty} x[k] \cdot z^{-k} = X(z)
+\end{equation}
+\cite[S.233]{book2}

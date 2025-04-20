@@ -1,6 +1,6 @@
-\section{Rechenregeln der Laplace Transformation}
+\subsection{Rechenregeln der Laplace Transformation}
 
-\subsection{Linearität}
+\subsubsection{Linearität}
 Die Laplace-Transformation ist ein \textbf{linearer Operator}. Das bedeutet, dass die Transformation einer Linearkombination zweier Funktionen der Linearkombination der jeweiligen Einzeltransformationen entspricht. Sind $a, b \in \mathbb{R}$ Konstanten und $f(t)$ sowie $g(t)$ Laplace-transformierbare Funktionen, so gilt:
 
 \begin{equation}
@@ -20,7 +20,7 @@ Gegeben sei folgendes Beispiel:
     \end{equation}
     \cite{buch1}
     
-\subsection{Streckung}
+\subsubsection{Streckung}
 \begin{equation}
     [\mathcal{L}(f(ct))](s) = \frac{1}{c}[\mathcal{L}f]\left(\frac{s}{c}\right), \quad c > 0
     \label{eq:laplace_streckung}
@@ -40,7 +40,7 @@ Beispiel:
 
 Diese Gleichung zeigt ein konkretes Beispiel der Streckungsregel, angewendet auf $\cos(3t)$, unter Verwendung der bekannten Laplace-Transformierten von $\cos(t)$.
 
-\subsection{Dämpfung}
+\subsubsection{Dämpfung}
 \begin{equation}
     [\mathcal{L}(\exp(-at)f(t))](s) = [\mathcal{L}f](s + a), \quad a > 0
     \label{eq:laplace_exponentielle_modulation}
@@ -57,7 +57,7 @@ Beispiel:
     \label{eq:laplace_exponential_beispiel}
     \end{equation}
 
-\subsection{Ableitung}
+\subsubsection{Ableitung}
 Sei $f$ auf $[0, \infty[$ mindestens differenzierbar, wobei die Ableitung $f'$ auf jedem endlichen Intervall nur endlich viele Sprungstellen besitzt (also stückweise stetig ist). Alternativ kann $f$ auch stetig differenzierbar auf $[0, \infty[$ sein, dann kann folgende Rechenregel angewendet werden /cite{buch1}:
 
 \begin{equation}
@@ -86,7 +86,7 @@ und mit steigender Potenz von $s$ der Grad der Ableitung fällt:
 \end{equation}
 \cite[S.~884]{buch1}
 
-\subsection{Stammfunktion}
+\subsubsection{Stammfunktion}
 
 \begin{equation}
 \left[ \mathcal{L} \left( \int_0^t f(u) \, du \right) \right](s)
@@ -109,7 +109,7 @@ Beispiel:
 \end{equation}
 \cite{buch1}
 
-\subsection{Faltung}
+\subsubsection{Faltung}
 
 \begin{equation}
     [\mathcal{L}(f * g)](s) = [\mathcal{L}f](s) \cdot [\mathcal{L}g](s)
