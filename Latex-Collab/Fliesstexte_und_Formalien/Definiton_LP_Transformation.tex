@@ -1,0 +1,13 @@
+\section{Definition der Laplace Transformation}
+
+"Eine Funktion $f \colon [0, \infty[ \to \mathbb{C}$ heißt genau dann Laplace-transformierbar, wenn das Integral
+
+\begin{equation}
+    F(s) := [\mathcal{L}f](s) := \int_{0}^{\infty} f(t) \exp(-st) \, dt 
+    = \lim_{u \to \infty} \int_{0}^{u} f(t) \exp(-st) \, dt
+    \label{eq:laplace_def}
+    \end{equation}
+    \cite{buch1}
+
+für ein $s \in \mathbb{C}$ erklärt ist und konvergiert. Ist eine Funktion Laplace transformierbar, dann ist über $F := \mathcal{L}f$ wieder eine Funktion definiert, die Laplace Transformierte F von f." \cite[S. 879]{buch1}
+Die obige Definition beschreibt also, unter welchen Bedingungen eine Funktion als Laplace-transformierbar gilt. Dies ist der Fall, wenn das zugehörige Integral existiert und konvergiert, also einen endlichen Wert ergibt. Die Variable $s$ ist dabei eine komplexe Zahl. Ist diese Bedingung erfüllt, so lässt sich der Funktion $f$ eine neue Funktion $F$ zuordnen – die sogenannte Laplace-Transformierte. Diese wird mit $F = \mathcal{L}f$ bezeichnet. \cite[S.~879]{buch1}
