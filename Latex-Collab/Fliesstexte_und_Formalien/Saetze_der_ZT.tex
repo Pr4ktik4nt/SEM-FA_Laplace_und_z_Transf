@@ -1,0 +1,58 @@
+\subsection{Sätze der z-Transformation}
+\label{sec:Sätze_der_ZT}
+Genauso wie die Laplace-Transformation, gelten auch für die z-Transformation einige Regeln, die das Rechnen mit der z-Transformierten erleichtern. Einige dieser Regeln sind ähnlich, während manche Sätze sich stark durch die zeitliche Diskretisierung unterscheiden.
+
+\subsubsection{Linearität}
+Da es sich bei der z-Transformation um eine lineare Transformation handelt, gilt für zwei kausale, zeitdiskrete Abtastfolgen $x_1[k]$ und $x_2[k]$ mit den zugehörigen Bildfunktionen $X_1(z)$ und $X_2(z)$ der Zusammenhang:
+\begin{equation}
+    a \cdot x_1[k] + b \cdot x_2[k] \TransformHoriz a \cdot X_1(z) + b \cdot X_2(z)
+\end{equation}
+
+
+\subsubsection{Verschiebungssatz}
+
+Wird die Abtastfolge $x[k]$ um $k_0$ Schritte nach rechts verschoben, so gilt auf Grund der der Definition der z-Transformation::
+\begin{equation}
+    x[k-k_0] \TransformHoriz z^{-k_0} \cdot X(z)
+\end{equation}
+
+
+\subsubsection{Dämpfungssatz}
+
+Wird die Abtastfolge $x[k]$ mit einem Faktor $a^k$ gedämpft, so gilt:
+
+\begin{equation}
+    x[k] \cdot a^k \TransformHoriz X(\frac{z}{a})
+\end{equation}
+
+Bei der Dämpfung ist zu beachten, dass sich der Konvergenzbereich ändert. Dieser hängt von dem Dämpfungsfaktor $a$ ab. Der o.g. Zusammenhang gilt nur für $|\frac{z}{a}| > 1$.
+
+\subsubsection{Multiplikation im Zeitbereich}
+
+Wird jeder Abtastwert der Folge $x[k]$ mit dem Wert von $k$ gewichtet, so entspricht dies der Ableitung der Bildfunktion mit dem Vorfaktor $-z$:
+\begin{equation}
+    x[k] \cdot k \TransformHoriz -z \cdot \frac{d}{dz} X(z)
+\end{equation}
+
+Über diesen Zusammenhang lässt sich sehr leicht zeigen, wie die Korrespondenz der mit k gewichteten Sprungfolge aus Tabelle \ref{tab:ZT_Korrespondenzen} zustande kommt:
+
+\begin{equation}
+    \mathcal{Z}(k \cdot x[k]) = -z \cdot \frac{d}{dz} \left(\frac{z}{z-1}\right) = -z \cdot \left(\frac{(z-1) - z}{(z-1)^2}\right) = -z \cdot \left(\frac{-1}{(z-1)^2}\right) = \frac{z}{(z-1)^2}
+\end{equation}
+
+\subsubsection{Faltungssatz}
+
+Auch für die z-Transformation gilt der Faltungssatz. Er sagt aus, dass die Faltung der zwei Abtastfolgen $x_1[k]$ und $x_2[k]$ im Zeitbereich der Multiplikation der zugehörigen Bildfunktionen im Frequenzbereich entspricht:
+\begin{equation}
+    x_1[k] * x_2[k] \TransformHoriz X_1(z) \cdot X_2(z)
+\end{equation}
+
+Dass diese Regel gilt, ist ein wichtiger Grund dafür, dass die z-Transformation verwendet wird, da somit die komplexe explizite Berechnung der Faltung vermieden wird.
+
+
+\subsubsection{Anfangswertsatz}
+
+Für eine rechtsseitige Folge, wie sie bei Abtastwerten vorliegt, also bei der $x[k] = 0$ für $k<0$ gilt, ist laut dem Anfangswertsatz der Wert zum Zeitpunkt $k=0$ \cite[S.215]{book3}:
+\begin{equation}
+    x[0] = \lim_{z \to \infty} X(z)
+\end{equation}

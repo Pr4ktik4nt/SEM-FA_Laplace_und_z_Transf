@@ -1,0 +1,17 @@
+\subsection{Rücktransformation}
+
+\subsubsection{Inverse z-Transformation}
+
+Auch bei der inversen Z-Transformation handelt es sich um eine lineare Transformation. Durch die Anwendung erhält man aus einer Bildfunktion $X(z)$ die zugehörige Zeitfolge $x[k]$ zurück. Die inverse z-Transformation ist definiert als:
+
+\begin{equation}
+    \label{eq:inverse_z_transformation}
+    \mathcal{Z}^{-1}\{X(z)\} = x[k] = \frac{1}{2\pi j} \oint_{C} X(z) \cdot z^{k-1} dz
+\end{equation}
+
+Die Rücktransformation erfolgt über die Integration entlang eines geschlossenen Pfades $C$ im mathematisch positiven Sinn um den Ursprung im Konvergenzbereich der von $X(z)$. Die Lösung über das Ringintegral ist recht kompliziert und wird in der Regel nur verwendet, wenn keine andere Möglichkeit besteht.
+
+\subsubsection{weitere Methoden zur Rücktransformation}
+
+In der Praxis findet die Rücktransformation meist über Korrespondenzen, wie in der Tabelle \ref{tab:ZT_Korrespondenzen} angegeben statt.
+Liegt $X(z)$ noch nicht in der Form der Korrespondenzen vor, so muss sie entweder über die in Abschnitt \ref{sec:Sätze_der_ZT} genannten Sätze umgeformt werden oder durch eine Partialbruchzerlegung in die benötigte Form gebracht werden \cite[S.246]{book2}.
