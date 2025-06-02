@@ -15,14 +15,19 @@
 
 
 % Layout-Einstellungen
-\frenchspacing                  % Einheitlicher Abstand nach Satzzeichen (keine extra Leerzeichen)
-\tolerance=9000                 % Erlaubt größere Lücken zwischen Wörtern, um unschöne Umbrüche zu vermeiden
-\usepackage{parskip}            % Entfernt Absatzeinrückung und fügt Abstand zwischen Absätzen hinzu
-\usepackage{lmodern}            % Schriftart Latin Modern
-\usepackage{titlesec}           % Benutzerdefinierte Überschriften
-\usepackage{lastpage}           % Gesamtseitenzahl abrufen
-\usepackage{fancyhdr}           % Für individuelle Kopf- und Fußzeilen -> s.u.
-\usepackage{geometry}           % Ermöglicht benutzerdefinierte Seitenränder
+\frenchspacing                      % Einheitlicher Abstand nach Satzzeichen (keine extra Leerzeichen)
+\tolerance=9000                     % Erlaubt größere Lücken zwischen Wörtern, um unschöne Umbrüche zu vermeiden
+\usepackage{parskip}                % Entfernt Absatzeinrückung und fügt Abstand zwischen Absätzen hinzu
+\usepackage{lmodern}                % Schriftart Latin Modern
+\usepackage{titlesec}               % Benutzerdefinierte Überschriften
+\usepackage{lastpage}               % Gesamtseitenzahl abrufen
+\usepackage{fancyhdr}               % Für individuelle Kopf- und Fußzeilen -> s.u.
+\usepackage{graphicx}               % Für Grafikanpassung siehe Sys und RGT Anwendung, Gleichungen und Bilder nebeneinander
+\usepackage{amsmath}                % Für aligned, equation, etc.
+\usepackage{tabularx}               % Für flexiblen Tabellenaufbau
+\renewcommand{\arraystretch}{1.8}   % Erhöht Zeilenhöhe im Tabellenteil
+\setlength{\tabcolsep}{1em}         % Etwas mehr Spaltenabstand
+\usepackage{geometry}               % Ermöglicht benutzerdefinierte Seitenränder
     \geometry{a4paper, left=25mm, right=25mm, top=3.5cm, bottom=2.5cm} % Ränder setzen
 
 % Literaturverzeichnis

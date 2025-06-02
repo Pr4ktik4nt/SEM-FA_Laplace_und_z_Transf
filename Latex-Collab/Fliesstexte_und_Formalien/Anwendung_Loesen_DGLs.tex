@@ -7,9 +7,7 @@ y''(t) + a y'(t) + b y(t) = f(t), \quad y(0) = y_0, \quad y'(0) = y_1
 \label{eq:dgl_grundform}
 \end{equation}
 
-\cite{buch1}
-
-Um die Laplace Transformierte der Gleich ung zu erhalten, wenden wir nun ein paar der oben gelernten Rechenregelen auf diese allgemein gehlatene Funktion an. Nach Anwenden der Ableitungs- und Linearitätsregel erhält man die Laplace-Transformierte. Auf der rechten Seite muss entsprechend die Korrespondenztabelle angewendet werden:
+Um die Laplace Transformierte der Gleichung zu erhalten, wenden wir nun ein paar der oben gelernten Rechenregelen auf diese allgemein gehlatene Funktion an. Nach Anwenden der Ableitungs- (15) und Linearitätsregel (9) erhält man die Laplace-Transformierte. Auf der rechten Seite muss entsprechend die Korrespondenztabelle angewendet werden:
 
 \begin{align*}
 & \left( s^2 Y(s) - s y_0 - y_1 \right)
@@ -20,14 +18,13 @@ Um die Laplace Transformierte der Gleich ung zu erhalten, wenden wir nun ein paa
 \Leftrightarrow \quad
 & Y(s) = \frac{F(s)}{s^2 + a s + b} + \frac{(s + a)y_0 + y_1}{s^2 + a s + b}
 \end{align*}
-\cite{buch1}
+\cite[S.~886]{buch1}
 
 Durch Rücktransformation erhält man dann eine Lösung des Ursprungsproblems. Wenn man im Laplace-Bereich zwei Funktionen multipliziert, entspricht das im Zeitbereich einer Faltung dieser Funktionen. Man wendet dabei das sogenannte Faltungstheorem an:
 
 \[
 \mathcal{L}^{-1} \{ F(s) \cdot G(s) \}(t) = f(t) * g(t)
 \]
-\cite{buch1}
 
 So ergibt sich die Lösung der Rücktransformation:
 
@@ -37,14 +34,14 @@ y(t) &= [\mathcal{L}^{-1}Y](t) = \left[ \mathcal{L}^{-1} \left( F(s) \cdot \frac
 &= [\mathcal{L}^{-1}F(s)](t) * \left[ \mathcal{L}^{-1} \left( \frac{1}{s^2 + as + b} \right) \right](t) 
 + \left[ \mathcal{L}^{-1} \left( \frac{(s+a)y_0 + y_1}{s^2 + as + b} \right) \right](t)
 \end{align*}
-\cite{buch1}
+\cite[S.~886]{buch1}
 
 Dazu gegeben sei ein Zahlenbeispiel mit einfacher Ableitung und einer Exponentialfunktion im Eingang:
 
-\begin{equation}
+\begin{align}
     6\dot{y}(t) + y(t) = 43 \, \mathrm{e}^{-7t} \\
     \text{mit } y(0) = 3
-\end{equation}
+\end{align}
 
 Wir transformieren beide Seiten, zum einen mit Hilfe der Ableitungsregel und zum anderen mit Hilfe der Korrespondenztablle für die Exponentialfunktion:
 \begin{itemize}
@@ -58,7 +55,7 @@ Dann ergibt sich:
 6(sY(s) - 3) + Y(s) = \frac{43}{s + 7}
 \]
 
-\subsubsection{Rücktransformation mit der Faltungsregel}
+\textbf{Rücktransformation mit der Faltungsregel}
 
 Wir berechnen die Rücktransformation
 \[
@@ -98,7 +95,7 @@ Zusammengefügt bekommen wir schließlich unsere allgemeine Lösung:
 \Rightarrow y(t) = \frac{43}{41} \cdot e^{-\frac{1}{6}t} \cdot \left( 1 - e^{-\frac{41}{6}t} \right) + 3 \cdot e^{-\frac{1}{6}t}
 \]
     
-\subsubsection{Unterschied in der Anwendung der Ableitungsregel auf die Fouriertransformation vs die Laplace Transformation}
+\textbf{Unterschied in der Anwendung der Ableitungsregel auf die Fouriertransformation vs die Laplace Transformation}
 
 Die Fourier-Transformation unterscheidet sich in Bezug auf die Ableitungsregel von der Laplace-Transformation, da bei ihr keine Anfangsbedingungen berücksichtigt werden – was darauf zurückzuführen ist, dass über den gesamten Zahlenraum von $-\infty$ bis $\infty$ integriert wird, statt wie bei der Laplace-Transformation ab null. 
 

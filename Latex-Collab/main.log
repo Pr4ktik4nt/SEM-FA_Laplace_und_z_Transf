@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  2 JUN 2025 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  2 JUN 2025 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,74 +343,93 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip70
 \f@nch@widthR=\skip71
 \@temptokenb=\toks31
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen165
+\ar@mcellbox=\box60
+\extrarowheight=\dimen166
+\NC@list=\toks32
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box61
+)
+\TX@col@width=\dimen167
+\TX@old@table=\dimen168
+\TX@old@col=\dimen169
+\TX@target=\dimen170
+\TX@delta=\dimen171
+\TX@cols=\count300
+\TX@ftn=\toks33
 ) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count300
-\Gm@cntv=\count301
-\c@Gm@tempcnt=\count302
-\Gm@bindingoffset=\dimen165
-\Gm@wd@mp=\dimen166
-\Gm@odd@mp=\dimen167
-\Gm@even@mp=\dimen168
-\Gm@layoutwidth=\dimen169
-\Gm@layoutheight=\dimen170
-\Gm@layouthoffset=\dimen171
-\Gm@layoutvoffset=\dimen172
-\Gm@dimlist=\toks32
+\Gm@cnth=\count301
+\Gm@cntv=\count302
+\c@Gm@tempcnt=\count303
+\Gm@bindingoffset=\dimen172
+\Gm@wd@mp=\dimen173
+\Gm@odd@mp=\dimen174
+\Gm@even@mp=\dimen175
+\Gm@layoutwidth=\dimen176
+\Gm@layoutheight=\dimen177
+\Gm@layouthoffset=\dimen178
+\Gm@layoutvoffset=\dimen179
+\Gm@dimlist=\toks34
 ) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 31.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 36.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count303
-\l__pdf_internal_box=\box60
+\l__color_backend_stack_int=\count304
+\l__pdf_internal_box=\box62
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-Package hyperref Info: Link coloring OFF on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+Package hyperref Info: Link coloring OFF on input line 36.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
-\scratchdimen=\dimen173
-\scratchbox=\box61
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count307
-\MPscratchDim=\dimen174
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count305
+\scratchdimen=\dimen180
+\scratchbox=\box63
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen181
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks36
 ) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -452,10 +471,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./Fliesstexte_und_Formalien/deckblatt.tex
-<Anlagen/Deckbild.png, id=100, 582.175pt x 627.34375pt>
+<Anlagen/Deckbild.png, id=64, 582.175pt x 627.34375pt>
 File: Anlagen/Deckbild.png Graphic file (type png)
 <use Anlagen/Deckbild.png>
-Package pdftex.def Info: Anlagen/Deckbild.png  used on input line 11.
+Package pdftex.def Info: Anlagen/Deckbild.png  used on input line 15.
 (pdftex.def)             Requested size: 273.14923pt x 294.34425pt.
 
 
@@ -501,97 +520,112 @@ File: utrsy.fd 2000/06/25v1.0transformation symbol font definitions
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \newpage
+l.60 \newpage
               [1] (./Fliesstexte_und_Formalien/Problem_FT_Loesung_LP.tex
 
-[2{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]) (./Fliesstexte_und_Formalien/Definiton_LP_Transformation.tex) (./Fliesstexte_und_Formalien/Allgemeine_Korrespondenzen.tex) (./Fliesstexte_und_Formalien/Rechenregeln_der_LP_Transformation.tex
+[2{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]) (./Fliesstexte_und_Formalien/Definiton_LP_Transformation.tex) (./Fliesstexte_und_Formalien/Allgemeine_Korrespondenzen.tex
 
 [3
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.20     \end{equation}
-                       ]
+l.41 \]
+       ]
 
-[4]) (./Fliesstexte_und_Formalien/Anwendung_Loesen_DGLs.tex
+[4]) (./Fliesstexte_und_Formalien/Rechenregeln_der_LP_Transformation.tex
 
 [5]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 51.
+
+[6]) (./Fliesstexte_und_Formalien/Anwendung_Loesen_DGLs.tex
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 48.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[6{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Underfull \hbox (badness 2495) in paragraph at lines 105--106
+[7]
+Underfull \hbox (badness 2495) in paragraph at lines 102--103
 []\OT1/lmr/m/n/10 Au^^Yerdem sind Funk-tio-nen mit ex-po-nen-ti-el-lem Wachs-tum zwar Laplace-, aber nicht Fourier-
  []
 
 ) (./Fliesstexte_und_Formalien/Grenzwertsaetze.tex
 
-[7]) (./Fliesstexte_und_Formalien/Anwedung_Systemtheorie_RGT.tex
-<Anlagen/ohmscher_Widerstand.png, id=236, 116.23425pt x 68.05424pt>
+[8{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+
+[9]) (./Fliesstexte_und_Formalien/Anwedung_Systemtheorie_RGT.tex
+<Anlagen/ohmscher_Widerstand.png, id=185, 116.23425pt x 68.05424pt>
 File: Anlagen/ohmscher_Widerstand.png Graphic file (type png)
 <use Anlagen/ohmscher_Widerstand.png>
-Package pdftex.def Info: Anlagen/ohmscher_Widerstand.png  used on input line 14.
-(pdftex.def)             Requested size: 91.04742pt x 53.31053pt.
-
-
-[8]
-<Anlagen/Spule.png, id=244, 116.23425pt x 56.00925pt>
+Package pdftex.def Info: Anlagen/ohmscher_Widerstand.png  used on input line 20.
+(pdftex.def)             Requested size: 109.2601pt x 63.97409pt.
+<Anlagen/Spule.png, id=187, 116.23425pt x 56.00925pt>
 File: Anlagen/Spule.png Graphic file (type png)
 <use Anlagen/Spule.png>
-Package pdftex.def Info: Anlagen/Spule.png  used on input line 25.
-(pdftex.def)             Requested size: 91.04742pt x 43.87503pt.
-<Anlagen/Kondensator.png, id=246, 117.43875pt x 71.0655pt>
+Package pdftex.def Info: Anlagen/Spule.png  used on input line 42.
+(pdftex.def)             Requested size: 109.2601pt x 52.65125pt.
+
+Overfull \hbox (7.14021pt too wide) in paragraph at lines 54--61
+[][]$ 
+ []
+
+<Anlagen/Kondensator.png, id=189, 117.43875pt x 71.0655pt>
 File: Anlagen/Kondensator.png Graphic file (type png)
 <use Anlagen/Kondensator.png>
-Package pdftex.def Info: Anlagen/Kondensator.png  used on input line 36.
-(pdftex.def)             Requested size: 91.04742pt x 55.09578pt.
-<Anlagen/Spannungsquelle.png, id=248, 86.12175pt x 89.133pt>
+Package pdftex.def Info: Anlagen/Kondensator.png  used on input line 65.
+(pdftex.def)             Requested size: 109.2601pt x 66.11623pt.
+<Anlagen/Spannungsquelle.png, id=191, 86.12175pt x 89.133pt>
 File: Anlagen/Spannungsquelle.png Graphic file (type png)
 <use Anlagen/Spannungsquelle.png>
-Package pdftex.def Info: Anlagen/Spannungsquelle.png  used on input line 44.
-(pdftex.def)             Requested size: 91.04742pt x 94.23434pt.
-<Anlagen/Stromquelle.png, id=250, 81.30376pt x 84.315pt>
+Package pdftex.def Info: Anlagen/Spannungsquelle.png  used on input line 85.
+(pdftex.def)             Requested size: 109.2601pt x 113.08475pt.
+<Anlagen/Stromquelle.png, id=193, 81.30376pt x 84.315pt>
 File: Anlagen/Stromquelle.png Graphic file (type png)
 <use Anlagen/Stromquelle.png>
-Package pdftex.def Info: Anlagen/Stromquelle.png  used on input line 52.
-(pdftex.def)             Requested size: 91.04742pt x 94.42699pt.
+Package pdftex.def Info: Anlagen/Stromquelle.png  used on input line 105.
+(pdftex.def)             Requested size: 109.2601pt x 113.31598pt.
 
 
-[9 <./Anlagen/ohmscher_Widerstand.png> <./Anlagen/Spule.png> <./Anlagen/Kondensator.png> <./Anlagen/Spannungsquelle.png> <./Anlagen/Stromquelle.png>]
-<Anlagen/System_mit_2_E_Speichern.png, id=264, 431.81325pt x 133.09724pt>
+[10 <./Anlagen/ohmscher_Widerstand.png> <./Anlagen/Spule.png> <./Anlagen/Kondensator.png> <./Anlagen/Spannungsquelle.png> <./Anlagen/Stromquelle.png>]
+<Anlagen/System_mit_2_E_Speichern.png, id=205, 431.81325pt x 133.09724pt>
 File: Anlagen/System_mit_2_E_Speichern.png Graphic file (type png)
 <use Anlagen/System_mit_2_E_Speichern.png>
-Package pdftex.def Info: Anlagen/System_mit_2_E_Speichern.png  used on input line 60.
+Package pdftex.def Info: Anlagen/System_mit_2_E_Speichern.png  used on input line 121.
 (pdftex.def)             Requested size: 455.24411pt x 140.32893pt.
 
 
-[10 <./Anlagen/System_mit_2_E_Speichern.png>]
-<Anlagen/Übertragungssysteme_in_Reihe.png, id=273, 354.123pt x 94.55325pt>
+[11 <./Anlagen/System_mit_2_E_Speichern.png>]
+<Anlagen/Übertragungssysteme_in_Reihe.png, id=214, 354.123pt x 94.55325pt>
 File: Anlagen/Übertragungssysteme_in_Reihe.png Graphic file (type png)
 <use Anlagen/Übertragungssysteme_in_Reihe.png>
-Package pdftex.def Info: Anlagen/Übertragungssysteme_in_Reihe.png  used on input line 153.
+Package pdftex.def Info: Anlagen/Übertragungssysteme_in_Reihe.png  used on input line 214.
 (pdftex.def)             Requested size: 227.62206pt x 60.7779pt.
-<Anlagen/Übertragungssysteme_parallel.png, id=275, 317.38576pt x 160.80075pt>
+<Anlagen/Übertragungssysteme_parallel.png, id=216, 317.38576pt x 160.80075pt>
 File: Anlagen/Übertragungssysteme_parallel.png Graphic file (type png)
 <use Anlagen/Übertragungssysteme_parallel.png>
-Package pdftex.def Info: Anlagen/Übertragungssysteme_parallel.png  used on input line 160.
+Package pdftex.def Info: Anlagen/Übertragungssysteme_parallel.png  used on input line 221.
 (pdftex.def)             Requested size: 227.62206pt x 115.32497pt.
-<Anlagen/Übertragungssysteme_Rückkopplung.png, id=277, 314.3745pt x 133.6995pt>
+<Anlagen/Übertragungssysteme_Rückkopplung.png, id=218, 314.3745pt x 133.6995pt>
 File: Anlagen/Übertragungssysteme_Rückkopplung.png Graphic file (type png)
 <use Anlagen/Übertragungssysteme_Rückkopplung.png>
-Package pdftex.def Info: Anlagen/Übertragungssysteme_Rückkopplung.png  used on input line 167.
+Package pdftex.def Info: Anlagen/Übertragungssysteme_Rückkopplung.png  used on input line 228.
 (pdftex.def)             Requested size: 227.62206pt x 96.80826pt.
 
 
-[11 <./Anlagen/Übertragungssysteme_in_Reihe.png> <./Anlagen/Übertragungssysteme_parallel.png>])
+[12 <./Anlagen/Übertragungssysteme_in_Reihe.png> <./Anlagen/Übertragungssysteme_parallel.png>])
 
-[12 <./Anlagen/Übertragungssysteme_Rückkopplung.png>] (./Fliesstexte_und_Formalien/Einfuehrung_z_Trafo.tex) (./Fliesstexte_und_Formalien/Eigenschaften_eins_ZT.tex
+[13 <./Anlagen/Übertragungssysteme_Rückkopplung.png>] (./Fliesstexte_und_Formalien/Einfuehrung_z_Trafo.tex
 
-[13]) (./Fliesstexte_und_Formalien/ZT_Korrespondenzen.tex
+LaTeX Warning: Citation `buch2' on page 14 undefined on input line 7.
+
+
+LaTeX Warning: Citation `buch2' on page 14 undefined on input line 43.
+
+) (./Fliesstexte_und_Formalien/Eigenschaften_eins_ZT.tex
 
 [14]
+
+[15]) (./Fliesstexte_und_Formalien/ZT_Korrespondenzen.tex
+
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
@@ -601,7 +635,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--62
 
  []
 
-<Anlagen/ZT_Impuls.png, id=319, 849.1725pt x 306.14375pt>
+<Anlagen/ZT_Impuls.png, id=263, 849.1725pt x 306.14375pt>
 File: Anlagen/ZT_Impuls.png Graphic file (type png)
 <use Anlagen/ZT_Impuls.png>
 Package pdftex.def Info: Anlagen/ZT_Impuls.png  used on input line 73.
@@ -611,7 +645,15 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 57--78
 []$[]$ $[]$
  []
 
-<Anlagen/ZT_Einheitssprung.png, id=321, 849.1725pt x 306.14375pt>
+
+
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.78 \addvspace{1cm}
+                    ]
+<Anlagen/ZT_Einheitssprung.png, id=271, 849.1725pt x 306.14375pt>
 File: Anlagen/ZT_Einheitssprung.png Graphic file (type png)
 <use Anlagen/ZT_Einheitssprung.png>
 Package pdftex.def Info: Anlagen/ZT_Einheitssprung.png  used on input line 102.
@@ -641,67 +683,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--110
 
  []
 
-
-
-[15
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.110 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.110 
-       <./Anlagen/ZT_Impuls.png>]
-<Anlagen/ZT_sin_wkT.png, id=332, 849.1725pt x 306.14375pt>
+<Anlagen/ZT_sin_wkT.png, id=273, 849.1725pt x 306.14375pt>
 File: Anlagen/ZT_sin_wkT.png Graphic file (type png)
 <use Anlagen/ZT_sin_wkT.png>
 Package pdftex.def Info: Anlagen/ZT_sin_wkT.png  used on input line 115.
 (pdftex.def)             Requested size: 273.14923pt x 98.47717pt.
 
 
-[16
+[18
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.134 \end{equation}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.152 \end{equation}
+l.134 \end{equation}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.152 \end{equation}
-                     <./Anlagen/ZT_Einheitssprung.png> <./Anlagen/ZT_sin_wkT.png>]) (./Fliesstexte_und_Formalien/Saetze_der_ZT.tex
+l.134 \end{equation}
+                     <./Anlagen/ZT_Impuls.png> <./Anlagen/ZT_Einheitssprung.png> <./Anlagen/ZT_sin_wkT.png>]) (./Fliesstexte_und_Formalien/Saetze_der_ZT.tex
 
-[17]) (./Fliesstexte_und_Formalien/inverse_ZT.tex
+[19]) (./Fliesstexte_und_Formalien/inverse_ZT.tex
 
-[18])
+[20])
 
-[19] (./main.bbl)
+[21] (./main.bbl)
 
-[20] 
+[22] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DFBA43114DD170A0B16E560E6F9876E8;5792.
+(rerunfilecheck)             Checksum: 97C4F4EEC883D8443EFD4978C3DC3EF5;3843.
  ) 
 Here is how much of TeX's memory you used:
- 13320 strings out of 473190
- 218850 string characters out of 5704335
- 641254 words of memory out of 5000000
- 36220 multiletter control sequences out of 15000+600000
+ 13426 strings out of 473190
+ 220447 string characters out of 5704335
+ 639988 words of memory out of 5000000
+ 36330 multiletter control sequences out of 15000+600000
  596381 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1307b,520s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1307b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/ben/.texlive2025/texmf-var/fonts/pk/ljfour/public/trsym/trsy10.600pk></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (21 pages, 469510 bytes).
+Output written on main.pdf (23 pages, 473294 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 429 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
