@@ -1,6 +1,7 @@
-\subsection{Rücktransformation}
+\addvspace{1cm}
+\subsection{Rücktransformation, Inverse z-transformation}
 
-\subsubsection{Inverse z-Transformation}
+\textbf{Inverse z-Transformation}
 
 Auch bei der inversen Z-Transformation handelt es sich um eine lineare Transformation. Durch die Anwendung erhält man aus einer Bildfunktion $X(z)$ die zugehörige Zeitfolge $x[k]$ zurück. Die inverse z-Transformation ist definiert als:
 
@@ -9,9 +10,42 @@ Auch bei der inversen Z-Transformation handelt es sich um eine lineare Transform
     \mathcal{Z}^{-1}\{X(z)\} = x[k] = \frac{1}{2\pi j} \oint_{C} X(z) \cdot z^{k-1} dz
 \end{equation}
 
-Die Rücktransformation erfolgt über die Integration entlang eines geschlossenen Pfades $C$ im mathematisch positiven Sinn um den Ursprung im Konvergenzbereich der von $X(z)$. Die Lösung über das Ringintegral ist recht kompliziert und wird in der Regel nur verwendet, wenn keine andere Möglichkeit besteht.
+Die Rücktransformation erfolgt über die Integration entlang eines geschlossenen Pfades $C$ im mathematisch positiven Sinn um den Ursprung im Konvergenzbereich der von $X(z)$. Die Lösung über das Ringintegral ist recht kompliziert und wird in der Regel nur verwendet, wenn keine andere Möglichkeit besteht \cite[S.246]{book2}.
+\addvspace{2cm}
 
-\subsubsection{weitere Methoden zur Rücktransformation}
+\textbf{weitere Methoden zur Rücktransformation}
 
 In der Praxis findet die Rücktransformation meist über Korrespondenzen, wie in der Tabelle \ref{tab:ZT_Korrespondenzen} angegeben statt.
 Liegt $X(z)$ noch nicht in der Form der Korrespondenzen vor, so muss sie entweder über die in Abschnitt \ref{sec:Sätze_der_ZT} genannten Sätze umgeformt werden oder durch eine Partialbruchzerlegung in die benötigte Form gebracht werden \cite[S.246]{book2}.
+
+\addvspace{1cm}
+
+\textbf{Beispielberechnung zur inversen z-Transformation}
+
+Im Folgenden betrachten wir die Rücktransformation der Bildfunktion $X(z) = \frac{2z+5}{z^2+5z-6}$, die für $|z| > 6$ konvergiert.
+Die Berechnung der Polstellen, also der Nullstellen des Nennerpolynoms erfolgt bspw. über die pq-Formel:
+\begin{equation}
+    z_{1,2} = -\frac{5}{2} \pm \frac{7}{2} \Rightarrow  z_{1} = 1 \wedge z_2 = -6
+\end{equation}
+
+Dadurch lässt sich die Funktion in Partialbrüche zerlegen. Da das Polyom einigermaßen harmlos ist, lassen sich die Werte für die Konstanten durch Einsetzen der Polstellen leicht berechnen:
+\begin{equation}
+\begin{aligned}
+    &X(z) = \frac{2z+5}{z^2+5z-6} = \frac{A}{z-1} + \frac{B}{z+6} \Rightarrow 2z+5 = A(z+6) + B(z-1) \\
+    &A = 1 \quad B = 1 \Rightarrow X(z) = \frac{1}{z-1} + \frac{1}{z+6} = \frac{1}{z} \cdot \left(\frac{z}{z-1} + \frac{z}{z-6}\right)
+\end{aligned}
+\end{equation}
+
+An dieser Schreibweise kann man nun sofort die Korrespondenzen der Sprungfolge und der Exponentialfolge aus Tabelle \ref{tab:ZT_Korrespondenzen} ablesen, die nach dem Verschiebungssatz aus Abschnitt \ref{sec:Verschiebungssatz} durch den Vorfaktor $\frac{1}{z}$ um einen Abtastwert nach rechts verschoben sind:
+\begin{equation}
+\begin{aligned}
+    &\mathcal{Z}^{-1}\left\{\frac{1}{z} \cdot \left(\frac{z}{z-1} + \frac{z}{z-6}\right)\right\} = z^{-1}\cdot\left( \epsilon[k] + \epsilon[k]\cdot(-6)^{k}\right) \\
+    \\
+    & x[k] = \epsilon[k-1] + \epsilon[k-1]\cdot(-6)^{k-1} \\ \\
+    &\Rightarrow x[k] = \begin{cases}
+        0 & k < 1 \\
+        1 + (-6)^{k-1} & k \geq 1
+    \end{cases}
+\end{aligned}
+\end{equation}
+

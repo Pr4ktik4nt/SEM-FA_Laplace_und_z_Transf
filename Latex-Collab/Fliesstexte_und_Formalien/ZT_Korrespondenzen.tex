@@ -1,26 +1,47 @@
+\addvspace{1cm}
 \subsection{Korrespondenzen elementarer Signalformen}
 
-\subsubsection{Zusammenfassung wichtiger Korrespondenzen}
+\textbf{Zusammenfassung wichtiger Korrespondenzen}
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
+    
     \begin{tabular}{|c|c|c|}
         \hline
         Abtastwerte $x[k]$ & Z-Transformierte $X(z)$ & Konvergenzbereich \rule{0pt}{0.5cm} \\
         \hline 
         Dirac-Impuls $\delta[k]$ & $1$ & $|z| \in \mathbb{R}$\rule{0pt}{0.5cm} \\
+        & & \\
         \hline
         Sprungfunktion $\epsilon[k]$ & $\frac{z}{z-1}$ & $|z| > 1$\rule{0pt}{0.5cm} \\
+             & & \\
+        \hline
+        $\epsilon[k] \cdot a^k$ & $\frac{z}{(z-a)}$ & $|z| > a$\rule{0pt}{0.5cm} \\
+             & & \\
+        \hline
+        $\epsilon[k] \cdot k \cdot a^k$ & $\frac{a \cdot z}{(z-a)^2}$ & $|z| > a$\rule{0pt}{0.5cm} \\
+             & & \\
         \hline
         $\epsilon[k] \cdot k$ & $\frac{z}{(z-1)^2}$ & $|z| > 1$\rule{0pt}{0.5cm} \\
+             & & \\
         \hline
-        $\epsilon[k] \cdot a^k$ & $\frac{z}{(z-a)^2}$ & $|z| > a$\rule{0pt}{0.5cm} \\
+        $\epsilon[k] \cdot k^2$ & $\frac{z\cdot (z+1)}{(z-1)^3}$ & $|z| > 1$\rule{0pt}{0.5cm} \\ 
+             & & \\
         \hline
         $\epsilon[k] \cdot e^{-ak}$ & $\frac{z}{(z-e^{-a})}$ & $|z| > e^{-a}$\rule{0pt}{0.5cm} \\
+             & & \\
         \hline
-        $\epsilon[k]\cdot sin(\omega k T)$ & $\frac{z\cdot sin(\omega T)}{z^2 - 2\cdot cos(\omega T)\cdot z + 1}$ & $|z| > 1$ \rule{0pt}{0.5cm}\\
+        $\epsilon[k] \cdot k \cdot e^{-ak}$ & $\frac{z\cdot e^{-a}}{\left(z-e^{-a}\right)^2}$ & $|z| > e^{-a}$\rule{0pt}{0.5cm} \\
+             & & \\
         \hline
-        $\epsilon[k]\cdot cos(\omega k T)$ & $\frac{z\cdot cos(\omega T)}{z^2 - 2\cdot cos(\omega T)\cdot z + 1}$ & $|z| > 1$ \rule{0pt}{0.5cm}\\
+        $\epsilon[k]\cdot sin(\omega_0 k)$ & $\frac{z\cdot sin(\omega_0)}{z^2 - 2\cdot cos(\omega_0)\cdot z + 1}$ & $|z| > 1$ \rule{0pt}{0.5cm}\\
+             & & \\
+        \hline
+        $\epsilon[k]\cdot cos(\omega_0 k)$ & $\frac{z\cdot cos(\omega_0)}{z^2 - 2\cdot cos(\omega_0)\cdot z + 1}$ & $|z| > 1$ \rule{0pt}{0.5cm}\\
+             & & \\
+        \hline
+        $\epsilon[k] \cdot \frac{1}{k!}$ & $e^{\frac{1}{z}}$ & $|z| > 0$\rule{0pt}{0.5cm} \\
+             & & \\
         \hline
     \end{tabular}
     \caption{Korrespondenzen elementarer Signalformen\cite[S.218]{book4}}
@@ -30,41 +51,102 @@
 
 Im Folgenden werden drei dieser Korrespondenzen beispielhaft näher betrachtet, um besser zu verstehen, wie diese zustande kommen.
 
- \subsubsection{Dirac-Impuls}
- \begin{minipage}[c]{0.45\textwidth}  $\delta[k] = \begin{cases}
+\addvspace{1cm}
+ \textbf{Dirac-Impuls} \\
+
+ \begin{minipage}[c]{0.5\textwidth}  $\delta[k] = \begin{cases}
         1 &, k=0 \\
         0 &, k \neq 0
     \end{cases}$
-    \end{minipage}
-    \begin{minipage}[c]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{Anlagen/ZT_Impuls.png}
-    \end{minipage}
+    \\
     \begin{align}
-        &\mathcal{Z}\{\delta[k]\} = \sum_{k=0}^{\infty}\delta[k]z^{-k} = 1\cdot z^0 = 1 \\
+        \notag
+        &\mathcal{Z}\{\delta[k]\} = \sum_{k=0}^{\infty}\delta[k]z^{-k} = 1\cdot z^0 = 1 \\ \notag \\
+        \notag
         &\delta[k] \TransformHoriz 1 \text{ mit } |z| \in \mathbb{R}
+        \notag
     \end{align}
+    \end{minipage}
+    \begin{minipage}[c]{0.5\textwidth}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\textwidth]{Anlagen/ZT_Impuls.png}
+            \caption{Dirac-Impuls}
+        \end{figure}
+    \end{minipage}
+    \cite[S.235]{book2}
+\addvspace{1cm}
 
-\subsubsection{Sprungfunktion}
-    \begin{minipage}[c]{0.45\textwidth} $\epsilon[k] = \begin{cases}
+\textbf{Sprungfunktion} \\
+\\
+    \begin{minipage}[c]{0.5\textwidth}
+        $\epsilon[k] = \begin{cases}
         1 &, k \geq 0 \\
         0 &, k < 0
         \end{cases}$
-    \end{minipage}
-    \begin{minipage}[c]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{Anlagen/ZT_Einheitssprung.png}
-    \end{minipage}
     \begin{align}
+        \notag
         &\mathcal{Z}\{\epsilon[k]\} = 1 + \frac{1}{z} + \frac{1}{z^2} + ... = \frac{1}{1-\frac{1}{z}} = \frac{z}{z-1}  \\
         \notag
-        &\text{Dieser Ausdruck entspricht der geometrischen Reihe, die nur für } |\frac{1}{z}| < 1 \text{ konvergiert:}\\
-        &\epsilon[k] \TransformHoriz \frac{z}{z-1} \text{ mit } |z| > 1
     \end{align}
-    
+    Dieser Ausdruck entspricht der geometrischen Reihe, die nur für  $|\frac{1}{z}| < 1$ konvergiert:
+    \begin{align}
+        \notag
+        &\epsilon[k] \TransformHoriz \frac{z}{z-1} \text{ mit } |z| > 1
+        \notag
+    \end{align}
+    \end{minipage}
+    \begin{minipage}[c]{0.5\textwidth}
+        \begin{figure}[H]
+        \centering
+            \includegraphics[width=\textwidth]{Anlagen/ZT_Einheitssprung.png}
+        \caption{Sprungfunktion}
+        \end{figure}
+    \end{minipage}
+    \cite[S.235]{book2}
+       \\
+    \\
+    \\
 
-\subsubsection{Cosinus}
-Zuletzt wird noch die etwas komplexere Korrespondenz der abgetasteten Sinusfunktion $\epsilon[k]\cdot sin(\omega k T)$ hergeleitet:
+
+\textbf{Sinus}
+\begin{figure}[H]
+    \centering
+        \includegraphics[width=0.6\textwidth]{Anlagen/ZT_sin_wkT.png}   
+    \caption{abgetasteter Sinus für $t \geq 0$}
+    \label{fig:ZT_sin_wk}
+\end{figure} 
+Zuletzt wird noch die etwas komplexere Korrespondenz der abgetasteten Sinusfunktion für $t \geq 0$ wie sie in Abbildung \ref{fig:ZT_sin_wk} zu sehen ist hergeleitet $\epsilon[k]\cdot sin(\omega k T)$.
+
+Wir beginnen mit der Definition der mit Diracimpulsen abgetasteten Sinusfunktion. Dabei wird der Term $\omega T = 2\pi T \cdot f$ mit $\omega_0$ abgekürzt.
+
+\begin{align}
+    x[k] = sin(\omega t) \cdot \delta(t-kT) = sin(k \cdot \omega T) = sin(k \omega_0), \text{           }k = 0, 1, 2, ... \\
+    \notag
+\end{align}
+
+Zum Rechnen wird die Eulersche Formel herangezogen:
+\begin{equation}
+\begin{aligned}
+    sin(k \omega_0) &= \frac{e^{j k \omega_0} - e^{-j k \omega_0}}{2j} \\
+    cos(k \omega_0) &= \frac{e^{j k \omega_0} + e^{-j k \omega_0}}{2}
+\end{aligned}
+\end{equation}
+Damit ergibt sich für X(z):
 
 
-
-
-
+\begin{align}
+    X(z) = \mathcal{Z}\{x[k]\} &= \sum_{k=0}^{\infty} sin(k \omega_0) z^{-k} = \sum_{k=0}^{\infty} \frac{e^{j k \omega_0} - e^{-j k \omega_0}}{2j} z^{-k}
+    \end{align}
+    Durch die Linearität kann der Ausdruck in zwei Summen zerlegt werden. Anschließend können wir mit der Korrespondenz der Exponentialfolge die Transformation durchführen und den Term vereinfachen:
+    \begin{equation}
+    \begin{aligned}
+    &= \frac{1}{2j} \left( \sum_{k=0}^{\infty} e^{j k \omega_0} z^{-k} - \sum_{k=0}^{\infty} e^{-j k \omega_0} z^{-k}\right)\\
+    &= \frac{1}{2j} \left( \frac{z}{z - e^{j\omega_0}} - \frac{z}{z - e^{-j\omega_0}}\right)\\
+    &= \frac{z}{2j} \cdot \frac{(z - e^{-j\omega_0}) - (z - e^{j\omega_0})}{(z - e^{j\omega_0})(z - e^{-j\omega_0})}\\
+    &= \frac{z}{2j}\cdot\frac{z-z + e^{j\omega_0}-e^{-j\omega_0}}{z^2 -z(e^{j\omega_0}+e^{-j\omega_0}) + e^{-j\omega_0}\cdot}\\
+    &= \frac{z}{2j}\cdot\frac{2j\cdot sin(\omega_0)}{z^2 -2z\cdot cos(\omega_0)+1}\\
+    &= \frac{z\cdot sin(\omega_0)}{z^2 -2z\cdot cos(\omega_0)+1} \\
+    &sin(\omega_0) \TransformHoriz \frac{z\cdot sin(\omega_0)}{z^2 -2z\cdot cos(\omega_0)+1}
+\end{aligned}
+\end{equation}

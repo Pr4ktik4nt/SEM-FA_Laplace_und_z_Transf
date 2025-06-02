@@ -1,13 +1,14 @@
+\addvspace{1cm}
 \subsection{Eigenschaften der einseitigen z-Transformation}
 
-\subsubsection{allgemeine Eigenschaften}
+\textbf{allgemeine Eigenschaften}
 Die Transformierte hat zunächst die Form eines Polynoms in $z^{-1}$ bzw. einer Potenzreihe der komplexen Variablen $\frac{1}{z}$, wobei die Koeffizienten genau die Abtastwerte $x[k]$ sind. 
 Aus den Eigenschaften der Potenzreihe ergibt sich, dass es einen Kovergenzradius $r$ gibt, sodass $X(z)$ für $|z|>\frac{1}{r}$ konvergiert und für $|z|<\frac{1}{r}$ divergiert \cite[S.233]{book2}.
 
 Falls für $x[k]$ eine z-Transformierte $X(z)$ mit $|z|>\frac{1}{r}$ existiert, ist sie eine analytische Funktion und die einzige Bildfunktion von $x[k]$. Außerdem gilt unter dieser Bedingung auch die Umkehrung, dass es zu der Transformierten $X(z)$ genau eine Originalfolge $x[k]$ gibt \cite[S.233]{book2}
 Diese Einschränkung gilt nur für die Einseitige z-Transformation\cite[S.207]{book4}.
-
-\subsubsection{Abbildung der s-Ebene auf die z-Ebene}
+\addvspace{3cm}
+\textbf{Abbildung der s-Ebene auf die z-Ebene}
 
 Da die z-Transformierte eines diskreten Signals direkt aus der Laplace-Transformierten des zeitkontinuierlichen Signals ableitet, ist es sinnvoll, zu betrachten, wie sich Punkte wie Pol- und Nullstellen aus der s-Ebene auf die z-Ebene übertragen.
 
@@ -31,10 +32,12 @@ Die Transformationsgleichungen von der s-Ebene in die z-Ebene ergeben sich wie f
     \item die rechte s-HE mitsamt Polen und Nullstellen wird auf den äußeren Bereich des Einheitskreises abgebildet.
     \item die linke s-HE mitsamt Polen und Nullstellen wird auf den inneren Bereich des Einheitskreises abgebildet.
 \end{itemize}
+\cite[S.234]{book2}
 
-((Bsp-Bild aus Matlab einfügen))
+%((Bsp-Bild aus Matlab einfügen))
 
-\subsubsection{Region of convergence (ROC)}
+\addvspace{1cm}
+\textbf{Region of convergence (ROC)}
 
 Damit die Transformierte konvergiert, muss die Summe der exponentiell gewichteten Abtastwerte absolut summierbar sein. Es muss also gelten:
 

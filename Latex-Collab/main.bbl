@@ -21,7 +21,7 @@
 \BIBdecl
 
 \bibitem{buch1}
-S.~R. Steffen~Goebbels, \emph{Mathematik verstehen und anwenden 3. Auflage}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2018.
+S.~Goebbels and S.~Ritter, \emph{Mathematik verstehen und anwenden 3. Auflage}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2018.
 
 \bibitem{manual1}
 E.~Ahle, \emph{Elektrische Netzwerkelemente}, 2015.
@@ -31,20 +31,15 @@ E.~Ahle, \emph{Elektrische Netzwerkelemente}, 2015.
 
 \bibitem{book2}
 \BIBentryALTinterwordspacing
-S.~U. Helmut~Ulrich, \emph{Laplace-Transformation, Diskrete Fourier-Transformation und z-Transformation}.\hskip 1em plus 0.5em minus 0.4em\relax Wiesbaden: Springer Fachmedien Wiesbaden, 2022. [Online]. Available: \url{https://doi.org/10.1007/978-3-658-31877-2_6}
+H.~Ulrich and S.~Ulrich, \emph{Laplace-Transformation, Diskrete Fourier-Transformation und z-Transformation}.\hskip 1em plus 0.5em minus 0.4em\relax Wiesbaden: Springer Fachmedien Wiesbaden, 2022. [Online]. Available: \url{https://doi.org/10.1007/978-3-658-31877-2_6}
 \BIBentrySTDinterwordspacing
+
+\bibitem{book3}
+A.~Oppenheim and R.~Schafer, \emph{Zeitdiskrete Signalverarbeitung}.\hskip 1em plus 0.5em minus 0.4em\relax München: R. Oldenbourg Verlag, 1999, iSBN: 3-486-24145-1.
 
 \bibitem{book4}
 \BIBentryALTinterwordspacing
 M.~Meyer, \emph{Signalverarbeitung}.\hskip 1em plus 0.5em minus 0.4em\relax Wiesbaden: Vieweg+Teubner, 2009. [Online]. Available: \url{https://doi.org/10.1007/978-3-8348-9316-1}
 \BIBentrySTDinterwordspacing
-
-\bibitem{book3}
-\BIBentryALTinterwordspacing
-R.~S. A.V.~Oppenheim, \emph{Zeitdiskrete Signalverarbeitung}.\hskip 1em plus 0.5em minus 0.4em\relax München: R. Oldenbourg Verlag. [Online]. Available: \url{https://doi.org/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{lecture1}
-P.~E. D.-I. W.~L. Prof. Dr.-Ing. W.~Schumacher, ``Grundlagen der regelungstechnik,'' 2003, vorlesungsskript der TU Braunschweig.
 
 \end{thebibliography}

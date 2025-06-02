@@ -1,17 +1,17 @@
 \section{z-Transformation}
 \subsection{Einführung in die z-Transformation}
-Die z-Transformation ist eine Verallgemeinerung der DFT und liefert für bei der Transformation einer größeren Klasse von Signalen ein Ergebnis. Sie erlaubt im Gegensatz zur DFT auch die Analyse von instabilen Systemen und ist damit weitestgehend äquivalent zur Laplace-Transformation für zeitkontinuierliche Systeme. Sie findet Anwendunng in der Analyse und Beschreibung zeitdiskreter Signale und Systeme sowie beim Lösen linearer Differenzengleichungen. \cite[S.231]{book2}. (+Zitiert aus Gref SIG Vorlesung)
+Die z-Transformation ist eine Verallgemeinerung der DFT und liefert für die Transformation einer größeren Klasse von Signalen ein Ergebnis. Sie erlaubt im Gegensatz zur DFT auch die Analyse von instabilen Systemen und ist damit weitestgehend äquivalent zur Laplace-Transformation für zeitkontinuierliche Systeme. Sie findet Anwendunng in der Analyse und Beschreibung zeitdiskreter Signale und Systeme, sowie beim Lösen linearer Differenzengleichungen. \cite[S.231]{book2} \cite[S.179]{book3}. %(+Zitiert aus Gref SIG Vorlesung)
 
 Vor der Transformation wird zum Beispiel eine kontinuierliche, kausale, stetige Funktion $x(t)$ zu äquidistanten Zeitpunkten $t=k \cdot T$ abgetastet. 
 Durch die Einschränkung, dass nur kausale Systeme betrachtet werden gilt $x(t) = 0$ für $t<0$. Demnach beschränken wir uns im Folgenden auf die einseitige z-Transformation.
 
-Die Auswertung der Funktionswerte von $x(t)$ an den Abtastzeitpunkten $t=kT$ werden verschobene Dirac-Impulse verwendet. Dabei werden die Abtastwerte durch die Reihe $x[k]\quad\text{mit } k \in \mathbb{Z}$ dargestellt:
+Die Auswertung der Funktionswerte von $x(t)$ an den Abtastzeitpunkten $t=kT$ werden verschobene Dirac-Impulse verwendet. Dabei werden die Abtastwerte durch die Folge $x[k]\quad\text{mit } k \in \mathbb{Z}$ dargestellt:
 \begin{equation}
     x_{ab}(t) = \sum_{k=0}^{\infty} x[k] \cdot \delta(t-kT) 
     \label{eq:abgetastete_funktion}
 \end{equation}
 
-Wenden wir auf diese Folge die Laplace-Transformation an, erhalten wir durch das Herausziehen der zeitunabhängigen Summe sowie der Auswerteeigenschaft der $\delta$-Funktion folgenden Zusammenhang:
+Wenden wir auf diese Folge die Laplace-Transformation an, so erhalten wir durch das Herausziehen der zeitunabhängigen Summe, sowie der Auswerteeigenschaft der $\delta$-Funktion folgenden Zusammenhang:
 
 
 \begin{equation}
