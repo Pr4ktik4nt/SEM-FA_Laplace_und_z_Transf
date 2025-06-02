@@ -1,25 +1,21 @@
 \section{Laplace Transformation}
 \subsection{Problem der Fourier Transformation}
 
-Die Fourier Tansformaiton wird dazu genutzt die Ähnlichkeit eines Signals zu harmonischen Schwingungen unterschiedlicher Frequenzen zu bestimmen. Sie stößt jedoch an ihre Grenzen, wenn ihr Benutzer versucht ein Signal zu analysieren, welches im Unendlichen nicht gegen Null strebt.
+Die Fourier Tansformaiton wird dazu genutzt die Ähnlichkeit eines Signals zu harmonischen Schwingungen unterschiedlicher Frequenzen zu bestimmen. Sie stößt jedoch an ihre Grenzen, wenn der Anwender versucht ein Signal zu analysieren, welches im Unendlichen nicht gegen Null strebt.
 
 \begin{equation}
     \int_{-\infty}^{\infty} |f(t)| \, dt < \infty
     \label{eq:abs_integrierbarkeit}
     \end{equation}
-    
-    \cite{buch1}
 
 Häufig tritt dieses Problem beim lösen von Differentialgleichungen im Zeitbereich auf. 
 In den sich ergebenden Lösungen sind zu einem großen Teil Exponentialfunktionen enthalten. 
-Wollen wir diese über Fourier Transformation lösen stoßen wir auf das Problem, dass mindestens einer der stationären Endwerte ungleich Null ist.
+Wollen wir diese über die Fourier Transformation lösen stoßen wir auf das Problem, dass mindestens einer der stationären Endwerte ungleich Null ist.
 
 \begin{equation}
     f(t) = e^t
     \label{eq:exp_funktion}
     \end{equation}
-
-    \cite{buch1}
 
 Versucht man die Funktion via Fourier zu transfomieren beläuft sich ihr Grenzwert gegen 
 $\infty$. 
@@ -29,19 +25,22 @@ $\infty$.
     \label{eq:exp_function_infty}
     \end{equation}
     
-    \cite{buch1}
+    \cite[S.~878]{buch1}
 
-\subsubsection{Lösungsansatz durch Laplace Transformation}
+Im Allgemeinen vergleicht die Fouriertransformation eine Funktion mit einer harmonischen Schwingung. 
 
-Ein Mittel zur Lösung dieses Problems ist das Anweden der Laplace Transformation. Um diese zu verwenden, muss man die Fourier Transformation um zwei Faktoren erweitern:
+\textbf{Lösungsansatz durch Laplace Transformation}
+
+Ein Mittel zur Lösung dieses Problems ist das Anweden der Laplace Transformation. 
+Die Laplace Transformation im Vergleich zur Fouriertransformation vergleicht eine Funktion nicht mit einer harmonischen, sondern mit einer harmonisch gedämpften Schwingung. Um die Laplace Transformation zu verwenden, muss man die Fourier Transformation um zwei Faktoren erweitern:
 
 \begin{equation}
     \int_{-\infty}^{\infty} f(t) e^{-\delta t} e^{-j \omega t} \, dt
     \label{eq:fourier_modifiziert}
     \end{equation}
-    \cite{buch1}
 
-Der im Vergleich zur Fourier Transformation zusätzliche Faktor $e^{-\delta t}$ dämpft unsere Funktion, sodass schließlich Null als stationärer Endwert erreicht wird. 
+Der im Vergleich zur Fourier Transformation zusätzliche Faktor $e^{-\delta t}$ dämpft unsere Funktion, sodass schließlich Null als stationärer Endwert erreicht wird. Setzen wir Setzen wir $-\infty$ ein
+ein ist das nicht der Fall. Dies lässt sich dadurch beheben, dass wir unsere Funktion erst zum Anfangszeitpunkt t=0 beginnen lassen \cite[S.~14]{buch3}.
 
 Deshalb ist folgende Bedingung anzugeben:
 
@@ -49,7 +48,6 @@ Deshalb ist folgende Bedingung anzugeben:
     f(t) = 0 \quad \text{für } t < 0
     \label{eq:ft_bedingung}
     \end{equation}
-    \cite{buch1}
 
 Da wir in der Praxis häufig Differentialgleichungen mit der Laplace Transformation lösen wollen und diese meist ein Anfangswertproblem darstellen, welches erst ab t=0 startet, ist diese Bedingung in vielen realen Anwendungsbeispielen gegeben. Beispielsweise:
 
@@ -61,9 +59,8 @@ Da wir in der Praxis häufig Differentialgleichungen mit der Laplace Transformat
     \end{cases}
     \label{eq:ft_definition}
     \end{equation}
-    \cite{buch1}
 
-Aufgrund dieser Bedingung kann man die untere Grenze Null setzen. Dabei ist $\delta + j\omega$ = s definiert.
+Aufgrund dieser Bedingung kann man die untere Grenze -0 (um den auf die Null defniierten Dirac Sprung zu berücksichtigen) setzen. Dabei ist $\delta + j\omega$ = s definiert.
 
 \begin{equation}
     \int_{-\infty}^{\infty} f(t) e^{-\delta t} e^{-j \omega t} \, dt
@@ -71,6 +68,6 @@ Aufgrund dieser Bedingung kann man die untere Grenze Null setzen. Dabei ist $\de
     = \int_{0}^{\infty} f(t) \exp\left(-(\underbrace{\delta + j\omega}_{=:s})t\right) \, dt
     \label{eq:mod_fourier}
     \end{equation}
-    \cite{buch1}
+    \cite[S.~879]{buch1}
 
 

@@ -1,6 +1,6 @@
 \subsection{Grenzwertsätze als Alternative zur Rücktransformation}
 
-Will man nur bestimmte Informationen aus einer Laplace Transformation ziehen, wie zum Beispiel den ANfangswert und den Endwert, kann man statt der Laplace Rücktransformation auch die Grenzwertsätze auf die Laplace Transformierte anweden. Mit Anfangs- und Endwertsatz versucht man das Verhalten der Funktion an den Rändern $\lim_{t \to 0^+} f(t)$ und $\lim_{t \to \infty} f(t)$
+Will man nur bestimmte Informationen aus einer Laplace Transformation ziehen, wie zum Beispiel den Anfangswert und den Endwert, kann man statt der Laplace Rücktransformation auch die Grenzwertsätze auf die Laplace Transformierte anweden. Mit Anfangs- und Endwertsatz versucht man das Verhalten der Funktion an den Rändern $\lim_{t \to 0^+} f(t)$ und $\lim_{t \to \infty} f(t)$
 bestimmen.
 
 \textbf{Anfangswertsatz}
@@ -9,7 +9,6 @@ bestimmen.
     \[
     \lim_{s \to \infty} sF(s) = f(0).
     \]
-    \cite{buch1}
 \end{quote}
 
 
@@ -20,7 +19,6 @@ bestimmen.
     \[
     \lim_{s \to 0^+} sF(s) = \lim_{t \to \infty} f(t).
     \]
-    \cite{buch1}
 \end{quote}
 
 
@@ -31,7 +29,6 @@ Herleitung des Anfangswertsatzes (über die Ableitungsregel):
     \[
     \lim_{s \to \infty} sF(s) = \lim_{s \to \infty} s[\mathcal{L}(f)](s) = \lim_{s \to \infty} [\mathcal{L}(f')](s) + f(0) = f(0).
     \]
-    \cite[S. 891]{buch1}
 \end{quote}
 
 Bedingung dafür, dass der Term für die Laplace-Transformierte von \( f' \) gegen Null geht, ist, dass \( f'(t) \) nicht zu schnell wächst (beschränkt oder höchstens exponentiell): 
@@ -49,7 +46,7 @@ Herleitung des Endwertsatzes:
     &= \lim_{u \to \infty} [f(t)]_0^u + f(0) \\
     &= \lim_{u \to \infty} f(u)
     \end{align*}
-    \cite[S. 892]{buch1}
+    \cite[S. 891]{buch1}
 
 Diese Herleitung basiert auf der Ableitungsregel.
 Im folgenden ein Zahlenbeispiel:

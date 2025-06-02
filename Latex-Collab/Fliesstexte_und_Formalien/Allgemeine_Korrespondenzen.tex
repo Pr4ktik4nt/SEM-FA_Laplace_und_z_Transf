@@ -3,6 +3,7 @@
 
 \begin{table}[H]
     \centering
+    \resizebox{\textwidth}{!}{%
     \begin{tabular}{|c|c||c|c|}
     \hline
     \textbf{Zeitfunktion} $f(t)$ & \textbf{Transformierte} $F(s)$ & \textbf{Zeitfunktion} $f(t)$ & \textbf{Transformierte} $F(s)$ \\
@@ -20,8 +21,113 @@
     $\cosh(at)$ & $\frac{s}{s^2 - a^2},\ \text{Re}(s) > |a|$ & $\delta(t)$ (siehe Seite 898) & $1$ \\
     $\sinh(at)$ & $\frac{a}{s^2 - a^2},\ \text{Re}(s) > |a|$ & & \\
     \hline
-    \end{tabular}
+    \end{tabular}}
     \caption{Tabelle der allgemeinen Laplace-Transformierten \cite[S.~883]{buch1}}
     \label{tab:laplace_allgemein}
     \end{table}
     
+    
+Beispielsweise wollen wir nun einmal den Term:
+
+\[
+f(t) = \sin^2(\omega t)
+\]
+
+Laplace transfomieren.
+Zunächst stellen wir also unser Laplace Integral mit den Grenzen 0 und \(\infty\) auf:
+
+\[
+\mathcal{L} \{ \sin^2(\omega t) \} = \int_0^{\infty} e^{-st} \sin^2(\omega t) \, dt
+\]
+
+Zur Berechung der Stammfunktion nutzen wir folgendes Additionstheorem:
+
+\[
+\sin^2(\omega t) = \frac{1 - \cos(2\omega t)}{2}
+\]
+
+Eingesetzt in unser Integral können wir dieses nun in zwei zu addierende Integrale aufteilen:
+
+\[
+\int_0^{\infty} e^{-st} \cdot \frac{1 - \cos(2\omega t)}{2} \, dt 
+= \frac{1}{2} \int_0^{\infty} e^{-st} \, dt 
+- \frac{1}{2} \int_0^{\infty} e^{-st} \cos(2\omega t) \, dt
+\]
+
+Das erste Integral lässt sich dann folgendermaßen auflösen:
+
+\[
+\int_0^{\infty} e^{-st} \, dt = \left[ \frac{e^{-st}}{-s} \right]_0^{\infty} = \frac{1}{s}, \quad \text{für } \operatorname{Re}(s) > 0
+\]
+
+Um das zweite Integral aufzulösen nutzen wir die eulersche Formel, welche unseren Cosinusterm über eulersche Funktionen darstellbar macht:
+
+\[
+\cos(2\omega t) = \frac{e^{i 2\omega t} + e^{-i 2\omega t}}{2}
+\]
+
+Setzen wir diesen Term nun wieder in unser aufgestelltes zweites Integral ein, könne wir dieses wieder aufteilen:
+
+\[
+\begin{aligned}
+\int_0^{\infty} e^{-st} \cos(2\omega t) \, dt 
+&= \int_0^{\infty} e^{-st} \cdot \frac{e^{i 2\omega t} + e^{-i 2\omega t}}{2} \, dt \\
+&= \frac{1}{2} \int_0^{\infty} \left( e^{-st + i 2\omega t} + e^{-st - i 2\omega t} \right) dt \\
+&= \frac{1}{2} \left( \int_0^{\infty} e^{-t(s - i 2\omega)} dt + \int_0^{\infty} e^{-t(s + i 2\omega)} dt \right)
+\end{aligned}
+\]
+
+Die Stammfunktionen der beiden Funktionen lassen sich darstellen zu:
+
+\[
+\int_0^{\infty} e^{-t(s \pm i 2\omega)} \, dt 
+= \left[ \frac{-1}{s \pm i 2\omega} \, e^{-t(s \pm i 2\omega)} \right]_0^{\infty}
+\]
+
+Somit können wir das Integral auflösen:
+
+\[
+\int_0^{\infty} e^{-t(s \pm i 2\omega)} \, dt 
+= \left[ \frac{-1}{s \pm i 2\omega} \, e^{-t(s \pm i 2\omega)} \right]_0^{\infty} 
+= \frac{1}{s \pm i 2\omega}
+\]
+
+Somit ergibt sich für das zweite Integral:
+
+\[
+\int_0^{\infty} e^{-st} \cos(2\omega t) \, dt 
+= \frac{1}{2} \left( \frac{1}{s - i 2\omega} + \frac{1}{s + i 2\omega} \right)
+= \frac{1}{2} \cdot \frac{2s}{s^2 + 4\omega^2}
+= \frac{s}{s^2 + 4\omega^2}
+\]
+
+Setzen wir das erste und zweite Integral nun wieder zusammen, bekommen wir den Term:
+
+\[
+\mathcal{L} \{ \sin^2(\omega t) \}
+= \frac{1}{2} \cdot \left( \frac{1}{s} - \frac{s}{s^2 + 4\omega^2} \right)
+\]
+
+Die Terme müssen, um auf die Form in der Tabelle zu kommen, auf den gleichen Nenner gebracht werden:
+
+Erster Term:
+
+\[
+\frac{1}{s} = \frac{s^2 + 4\omega^2}{s(s^2 + 4\omega^2)}
+\]
+
+Zweiter Term:
+
+\[
+\frac{s}{s^2 + 4\omega^2} 
+= \frac{s \cdot s}{s(s^2 + 4\omega^2)} 
+= \frac{s^2}{s(s^2 + 4\omega^2)}
+\]
+
+Subtrahiert man die Terme und multipliziert man mit \(\frac{1}{2}\), dann erhält man die gesuchte Form:
+
+\[
+\mathcal{L} \{ \sin^2(\omega t) \} = \frac{s}{2\omega^2 (s^2 + 4\omega^2)}
+\]
+
+

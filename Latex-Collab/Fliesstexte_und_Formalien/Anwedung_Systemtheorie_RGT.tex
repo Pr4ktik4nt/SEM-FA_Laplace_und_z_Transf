@@ -2,55 +2,116 @@
 
 Mithilfe der Laplace Transformation lassen sich Systeme und ihre Funktionen aus dem Zeitbereich im Bildbereich (Frequenzbereich) darstellen. Dazu ein Beispiel aus der Elektrotechnik:
 
-Ohmscher Widerstand
-\begin{equation}
+\vspace{1em}  % vertikaler Abstand zwischen Elementen
+
+\noindent
+\begin{minipage}[t]{0.35\textwidth}
+    \textbf{Ohmscher Widerstand}\\[0.5ex]
+    \(
     \begin{aligned}
     u_R(t) &= R\, \dot{i}_R(t) \\
     \dot{i}_R(t) &= \frac{1}{R} u_R(t)
     \end{aligned}
-    \end{equation}
-\cite{manual1}
-
-\includegraphics[width= 0.2\textwidth]{Anlagen/ohmscher_Widerstand.png}
-
-Induktivität
-\begin{equation}
+    \)
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \vspace*{-0.3ex} % optionales Feintuning
+    \includegraphics[width=0.8\textwidth]{Anlagen/ohmscher_Widerstand.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+    \raggedleft
+    \vspace*{-0.3ex} % optional, damit Quelle auch oben beginnt
+    \cite{manual1}
+\end{minipage}
+\vspace{1.5em}
+\noindent
+\begin{minipage}[t]{0.35\textwidth}
+    \textbf{Induktivität}\\[0.5ex]
+    \(
     \begin{aligned}
     i_L(t) &= \frac{1}{L} \int_0^t u_L(\tau) \, d\tau + i_{L0} \\
     u_L(t) &= L \frac{d i_L(t)}{dt} \quad \text{mit} \quad i_L(0) = i_{L0}
     \end{aligned}
-    \end{equation}
-\cite{manual1}
+    \)
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \vspace*{-0.3ex}
+    \includegraphics[width=0.8\textwidth]{Anlagen/Spule.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+    \raggedleft
+    \vspace*{-0.3ex}
+    \cite{manual1}
+\end{minipage}
 
-\includegraphics[width= 0.2\textwidth]{Anlagen/Spule.png}
-
-Kapazität
-\begin{equation}
+\vspace{1.5em}
+\noindent
+\begin{minipage}[t]{0.35\textwidth}
+    \textbf{Kapazität}\\[0.5ex]
+    \(
     \begin{aligned}
     u_C(t) &= \frac{1}{C} \int_0^t i_C(\tau) \, d\tau + u_{C0} \\
     i_C(t) &= C \frac{d u_C(t)}{dt} \quad \text{mit} \quad u_C(0) = u_{C0}
     \end{aligned}
-    \end{equation}
+    \)
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \vspace*{-0.3ex}
+    \includegraphics[width=0.8\textwidth]{Anlagen/Kondensator.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+    \raggedleft
+    \vspace*{-0.3ex}
     \cite{manual1}
+\end{minipage}
 
-\includegraphics[width= 0.2\textwidth]{Anlagen/Kondensator.png}
-
-Ideale Spannungsquelle
-\begin{equation}
+\vspace{1.5em}
+\noindent
+\begin{minipage}[t]{0.35\textwidth}
+    \textbf{Ideale Spannungsquelle}\\[0.5ex]
+    \(
     u_0(t) = f(t)
-    \end{equation}
+    \)
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \vspace*{-0.3ex}
+    \includegraphics[width=0.8\textwidth]{Anlagen/Spannungsquelle.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+    \raggedleft
+    \vspace*{-0.3ex}
     \cite{manual1}
+\end{minipage}
 
-\includegraphics[width= 0.2\textwidth]{Anlagen/Spannungsquelle.png}
-
-Ideale Stromquelle
-\begin{equation}
+\vspace{1.5em}
+\noindent
+\begin{minipage}[t]{0.35\textwidth}
+    \textbf{Ideale Stromquelle}\\[0.5ex]
+    \(
     i_0(t) = f(t)
-    \end{equation}
+    \)
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \vspace*{-0.3ex}
+    \includegraphics[width=0.8\textwidth]{Anlagen/Stromquelle.png}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+    \raggedleft
+    \vspace*{-0.3ex}
     \cite{manual1}
+\end{minipage}
 
-\includegraphics[width= 0.2\textwidth]{Anlagen/Stromquelle.png}
-    
+
 \paragraph{Beispielaufgabe:}
 
 Das RC-Netzwerk, bestehend aus den Widerständen \( R_1 \) und \( R_2 \) sowie den Kapazitäten \( C_1 \) und \( C_2 \), wird entsprechend Abbildung~7 beschrieben. Die Eingangsspannung ist \( u_e(t) \), während \( u_a(t) \) die Ausgangsspannung des Netzwerks darstellt. 
@@ -75,7 +136,7 @@ u_e = u_{R1} + u_{C1} = R_1 i_{C1} + u_{C1} = R_1 C_1 \frac{du_{C1}}{dt} + u_{C1
 
 \paragraph{Masche 2:}
 \[
-\frac{R_2 C_2}{T_2} \frac{du_a}{dt} + u_a = u_{C1} \quad \Rightarrow \text{Ableiten:} \quad
+R_2 C_2 \frac{du_a}{dt} + u_a = u_{C1} \quad \Rightarrow \text{Ableiten:} \quad
 R_2 C_2 \frac{d^2 u_a}{dt^2} + \frac{du_a}{dt} = \frac{du_{C1}}{dt}
 \]
 
@@ -141,7 +202,7 @@ y(0) = c_1 + c_2 + 1 = 2 \quad \Rightarrow \quad c_1 = 1 - c_2
 y(t) = e^{-3t} + 1
 \]
 
-\subsubsection{Verknüpfung von Übertragungssystemen}
+\textbf{Verknüpfung von Übertragungssystemen}
 
 Im vorangegangenen Beispiel wurde ein erstes Beispiel gegeben, das ein Übertragungssystem darstellt. Sind nun mehrere Übertragungssysteme gegeben, für die bereits eine Funktion im Bildbereich bekannt ist, können sie miteinander verknüpft werden.
 Dies kann auf verschiedenen Wegen geschehen. Übertragungssysteme können in Reihe, parallel, per Rückkopplung oder auch durch eine Mischung der vorangegangenen Fälle miteinander verknüpft sein.

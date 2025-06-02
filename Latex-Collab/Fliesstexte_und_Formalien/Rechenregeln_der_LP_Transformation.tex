@@ -1,13 +1,13 @@
 \subsection{Rechenregeln der Laplace Transformation}
 
-\subsubsection{Linearität}
+\textbf{Linearität}
 Die Laplace-Transformation ist ein \textbf{linearer Operator}. Das bedeutet, dass die Transformation einer Linearkombination zweier Funktionen der Linearkombination der jeweiligen Einzeltransformationen entspricht. Sind $a, b \in \mathbb{R}$ Konstanten und $f(t)$ sowie $g(t)$ Laplace-transformierbare Funktionen, so gilt:
 
 \begin{equation}
 [\mathcal{L}(a f(t) + b g(t))](s) = a [\mathcal{L}f](s) + b [\mathcal{L}g](s)
 \label{eq:laplace_linearitaet}
 \end{equation}
-\cite{buch1}
+
 
 Diese Eigenschaft vereinfacht die Berechnung von Laplace-Transformierten zusammengesetzter Funktionen, da man die einzelnen Bestandteile getrennt transformieren kann.
 
@@ -18,14 +18,13 @@ Gegeben sei folgendes Beispiel:
     = \frac{3}{s - 4} + \frac{7}{s + 2}
     \label{eq:laplace_bsp_linear}
     \end{equation}
-    \cite{buch1}
+    \cite[S.~883]{buch1}
     
-\subsubsection{Streckung}
+\textbf{Streckung}
 \begin{equation}
     [\mathcal{L}(f(ct))](s) = \frac{1}{c}[\mathcal{L}f]\left(\frac{s}{c}\right), \quad c > 0
     \label{eq:laplace_streckung}
     \end{equation}
-    \cite{buch1}
 
 Diese Gleichung beschreibt die sogenannte \textbf{Streckungsregel} der Laplace-Transformation. Sie gibt an, wie sich die Transformation verändert, wenn die Zeitachse durch einen positiven konstanten Faktor $c$ gestaucht oder gestreckt wird. Wird in der Zeitfunktion $t$ durch $ct$ ersetzt, so entspricht das im Bildbereich einer Division des Laplace-Arguments $s$ durch $c$ sowie einer zusätzlichen Multiplikation mit $\frac{1}{c}$.
 
@@ -36,16 +35,15 @@ Beispiel:
     = \frac{s}{s^2 + 9}
     \label{eq:laplace_bsp_streckung}
     \end{equation}
-    \cite{buch1}
+    \cite[S.~884]{buch1}
 
 Diese Gleichung zeigt ein konkretes Beispiel der Streckungsregel, angewendet auf $\cos(3t)$, unter Verwendung der bekannten Laplace-Transformierten von $\cos(t)$.
 
-\subsubsection{Dämpfung}
+\textbf{Dämpfung}
 \begin{equation}
     [\mathcal{L}(\exp(-at)f(t))](s) = [\mathcal{L}f](s + a), \quad a > 0
     \label{eq:laplace_exponentielle_modulation}
     \end{equation}
-    \cite{buch1}
 
 Diese Gleichung stellt die \textbf{Dämpfungsregel} der Laplace-Transformation dar. Sie besagt, dass die Multiplikation einer Zeitfunktion $f(t)$ mit einem exponentiellen Ausdruck $\exp(-at)$ im Zeitbereich dazu führt, dass die Laplace-Transformierte von $f(t)$ im Bildbereich um $a$ nach rechts verschoben wird, also $\mathcal{L}(f(t)) \to \mathcal{L}(f)(s + a)$. Diese Regel erlaubt es, die Transformierte zusammengesetzter Funktionen effizient zu bestimmen.
 
@@ -56,15 +54,16 @@ Beispiel:
     = \frac{1}{(s + 1) - 1} = \frac{1}{s} = [\mathcal{L}(1)](s)
     \label{eq:laplace_exponential_beispiel}
     \end{equation}
+    \cite[S.~884]{buch1}
 
-\subsubsection{Ableitung}
-Sei $f$ auf $[0, \infty[$ mindestens differenzierbar, wobei die Ableitung $f'$ auf jedem endlichen Intervall nur endlich viele Sprungstellen besitzt (also stückweise stetig ist). Alternativ kann $f$ auch stetig differenzierbar auf $[0, \infty[$ sein, dann kann folgende Rechenregel angewendet werden /cite{buch1}:
+\textbf{Ableitung}
+Sei $f$ auf $[0, \infty[$ mindestens differenzierbar, wobei die Ableitung $f'$ auf jedem endlichen Intervall nur endlich viele Sprungstellen besitzt (also stückweise stetig ist). Alternativ kann $f$ auch stetig differenzierbar auf $[0, \infty[$ sein, dann kann folgende Rechenregel angewendet werden \cite[S.~23]{buch3}:
 
 \begin{equation}
     [\mathcal{L}(f')](s) = s[\mathcal{L}f](s) - f(0)
     \label{eq:laplace_ableitung}
     \end{equation}
-    \cite{buch1}
+
 
 Beispiel:
 \begin{equation}
@@ -72,7 +71,7 @@ Beispiel:
     = s \cdot \frac{1}{s^2 + 1} = [\mathcal{L}(\cos t)](s)
     \label{eq:laplace_ableitung_beispiel}
     \end{equation}
-    \cite{buch1}
+    \cite[S.~884]{buch1}
     
 
 Bei höheren Ableitungen muss iterativ vorgegangen werden, wobei die Anfangsbedingungen einbezogen werden
@@ -86,14 +85,13 @@ und mit steigender Potenz von $s$ der Grad der Ableitung fällt:
 \end{equation}
 \cite[S.~884]{buch1}
 
-\subsubsection{Stammfunktion}
+\textbf{Stammfunktion}
 
 \begin{equation}
 \left[ \mathcal{L} \left( \int_0^t f(u) \, du \right) \right](s)
 = \frac{1}{s} [\mathcal{L}f](s)
 \label{eq:laplace_integralregel}
 \end{equation}
-\cite{buch1}
 
 Diese Rechenregel beschreibt die Laplace-Transformation eines Integrals. Wenn man eine Funktion $f(t)$ zuvor über das Intervall $[0, t]$ integriert, so entspricht dies im Laplace-Bild einer Division der ursprünglichen Transformierten durch $s$.
 
@@ -107,15 +105,14 @@ Beispiel:
 = [\mathcal{L}(\sin t)](s)
 \label{eq:laplace_integral_beispiel}
 \end{equation}
-\cite{buch1}
+\cite[S.~885]{buch1}
 
-\subsubsection{Faltung}
+\textbf{Faltung}
 
 \begin{equation}
     [\mathcal{L}(f * g)](s) = [\mathcal{L}f](s) \cdot [\mathcal{L}g](s)
     \label{eq:laplace_faltung}
     \end{equation}
-    \cite{buch1}
     
 Die Faltungseigenschaft der Laplace-Transformation erlaubt es, das Faltungsintegral zweier Funktionen im Zeitbereich in eine einfache Multiplikation ihrer jeweiligen Laplace-Transformierten im Bildbereich umzuwandeln. Im gezeigten Beispiel wird die Faltung zweier identischer Exponentialfunktionen $e^t$ berechnet. Dabei ergibt sich, dass die Laplace-Transformierte des Faltungsprodukts $(e^t * e^t)(t)$ gleich der Laplace-Transformierten von $t e^t$ ist, was durch beide Rechenwege bestätigt wird.
 
@@ -134,6 +131,6 @@ Beispiel:
     = \frac{1}{(s - 1)^2}
     \label{eq:laplace_faltung_beispiel}
     \end{align}
-    \cite{buch1}
+    \cite[S.~885]{buch1}
     
 
