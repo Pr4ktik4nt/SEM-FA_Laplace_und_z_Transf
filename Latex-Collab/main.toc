@@ -8,23 +8,22 @@
 \contentsline {subsection}{\numberline {1.6}Grenzwertsätze als Alternative zur Rücktransformation}{9}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}Anwedung der Laplace Transformation in der Systemtheorie und Regelungstechnik}{10}{subsection.1.7}%
 \contentsline {paragraph}{Beispielaufgabe:}{11}{subsection.1.7}%
-\contentsline {paragraph}{Masche 1:}{11}{subsection.1.7}%
-\contentsline {paragraph}{Masche 2:}{11}{subsection.1.7}%
-\contentsline {paragraph}{Charakteristische Gleichung:}{11}{subsection.1.7}%
-\contentsline {paragraph}{Eigenwerte:}{11}{subsection.1.7}%
-\contentsline {paragraph}{Lösung der homogenen DGL:}{11}{subsection.1.7}%
-\contentsline {paragraph}{Ansatz partikuläre Lösung:}{11}{subsection.1.7}%
-\contentsline {paragraph}{Einsetzen in DGL:}{11}{subsection.1.7}%
+\contentsline {paragraph}{Masche 1:}{12}{subsection.1.7}%
+\contentsline {paragraph}{Masche 2:}{12}{subsection.1.7}%
+\contentsline {paragraph}{Charakteristische Gleichung:}{12}{subsection.1.7}%
+\contentsline {paragraph}{Eigenwerte:}{12}{subsection.1.7}%
+\contentsline {paragraph}{Lösung der homogenen DGL:}{12}{subsection.1.7}%
+\contentsline {paragraph}{Ansatz partikuläre Lösung:}{12}{subsection.1.7}%
+\contentsline {paragraph}{Einsetzen in DGL:}{12}{subsection.1.7}%
 \contentsline {paragraph}{Allgemeine Lösung der DGL:}{12}{subsection.1.7}%
 \contentsline {paragraph}{Konstanten aus Anfangsbedingungen:}{12}{subsection.1.7}%
 \contentsline {paragraph}{Endgültige Lösung:}{12}{subsection.1.7}%
-\contentsline {paragraph}{In Reihe:}{12}{subsection.1.7}%
-\contentsline {paragraph}{Parallel:}{12}{subsection.1.7}%
-\contentsline {paragraph}{Rückkopplung:}{12}{subsection.1.7}%
+\contentsline {paragraph}{In Reihe:}{13}{subsection.1.7}%
+\contentsline {paragraph}{Parallel:}{13}{subsection.1.7}%
+\contentsline {paragraph}{Rückkopplung:}{13}{subsection.1.7}%
 \contentsline {section}{\numberline {2}z-Transformation}{14}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Einführung in die z-Transformation}{14}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Einleitung der z-Transformation}{14}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Eigenschaften der einseitigen z-Transformation}{14}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Korrespondenzen elementarer Signalformen}{16}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Rechenregeln der z-Transformation}{19}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Rücktransformation, Inverse z-transformation}{20}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.2}Eigenschaften der einseitigen z-Transformation}{14}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Korrespondenzen elementarer Signalformen}{16}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Rechenregeln der z-Transformation}{18}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Rücktransformation, Inverse z-transformation}{20}{subsection.2.5}%
