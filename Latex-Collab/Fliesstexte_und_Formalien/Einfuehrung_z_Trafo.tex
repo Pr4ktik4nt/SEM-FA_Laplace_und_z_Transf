@@ -1,11 +1,11 @@
 \section{z-Transformation}
 \subsection{Einführung in die z-Transformation}
-Die z-Transformation ist eine Verallgemeinerung der DFT und liefert für die Transformation einer größeren Klasse von Signalen ein Ergebnis. Sie erlaubt im Gegensatz zur DFT auch die Analyse von instabilen Systemen und ist damit weitestgehend äquivalent zur Laplace-Transformation für zeitkontinuierliche Systeme. Sie findet Anwendunng in der Analyse und Beschreibung zeitdiskreter Signale und Systeme, sowie beim Lösen linearer Differenzengleichungen. \cite[S.231]{book2} \cite[S.179]{book3}. %(+Zitiert aus Gref SIG Vorlesung)
+Die z-Transformation ist eine Verallgemeinerung der DFT für Folgen und liefert für die Transformation einer größeren Klasse von Signalen ein Ergebnis. Sie erlaubt im Gegensatz zur DFT auch die Analyse von instabilen Systemen und ist damit weitestgehend äquivalent zur Laplace-Transformation für zeitkontinuierliche Systeme. Sie findet Anwendunng in der Analyse und Beschreibung zeitdiskreter Signale und Systeme, sowie beim Lösen linearer Differenzengleichungen. \cite[S.231]{book2} \cite[S.179]{book3}. %(+Zitiert aus Gref SIG Vorlesung)
 
-Vor der Transformation wird zum Beispiel eine kontinuierliche, kausale, stetige Funktion $x(t)$ zu äquidistanten Zeitpunkten $t=k \cdot T$ abgetastet. 
+Wir betrachten eine kontinuierliche, kausale, stetige Funktion $x(t)$, die zu äquidistanten Zeitpunkten $t=k \cdot T$ abgetastet wurde. 
 Durch die Einschränkung, dass nur kausale Systeme betrachtet werden gilt $x(t) = 0$ für $t<0$. Demnach beschränken wir uns im Folgenden auf die einseitige z-Transformation.
 
-Die Auswertung der Funktionswerte von $x(t)$ an den Abtastzeitpunkten $t=kT$ werden verschobene Dirac-Impulse verwendet. Dabei werden die Abtastwerte durch die Folge $x[k]\quad\text{mit } k \in \mathbb{Z}$ dargestellt:
+Für die Auswertung der Funktionswerte von $x(t)$ an den Abtastzeitpunkten $t=kT$ werden verschobene Dirac-Impulse verwendet. Dabei werden die Abtastwerte durch die Folge $x[k]\quad\text{mit } k \in \mathbb{Z}$ dargestellt:
 \begin{equation}
     x_{ab}(t) = \sum_{k=0}^{\infty} x[k] \cdot \delta(t-kT) 
     \label{eq:abgetastete_funktion}
@@ -30,6 +30,7 @@ Wir bezeichnen die neue Variable $z=e^{sT}, z \in \mathbb{C}$ und erhalten die D
     \label{eq: z-Variable}
     z = e^{sT} = e^{\sigma + j \omega} = e^{\sigma} \cdot e^{j \omega} = r \cdot e^{j \omega}  
 \end{equation}
+
 Die Folge $x[k]$ ist genau dann z-transformierbar, wenn die oben genannte Summe konvergiert.
-Hierzu sei gesagt, dass die Transformierte $X(z)$ nur in ihrem Konvergenzbereich (ROC) definiert ist. 
-Auf den Konvergenzbereich sowie die Zerlegung der komplexen Variable z in Polarkoordinaten wird eben nächsten Abschnitt genauer eingegangen \cite[S.207]{book4}\cite[S.233]{book2}.
+Hierzu sei gesagt, dass die Transformierte $X(z)$ nur in ihrem Konvergenzbereich (ROC) definiert ist. Sie existiert nur für Werte von $z$, die im Konvergenzbereich liegen. 
+Auf den Konvergenzbereich sowie die Zerlegung der komplexen Variable z in Polarkoordinaten wird im nächsten Abschnitt genauer eingegangen \cite[S.207]{book4}\cite[S.233]{book2}.
