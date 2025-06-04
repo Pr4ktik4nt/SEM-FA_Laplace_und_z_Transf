@@ -45,13 +45,18 @@ Wird jeder Abtastwert der Folge $x[k]$ mit dem Wert von $k$ gewichtet, so entspr
 \end{equation}
 \addvspace{1cm}
 \textbf{Faltungssatz}
+Die diskrete Faltung zweier Folgen erfolgt nicht über ein Faltungsintegral, sondern über die Faltungssumme. Diese ist definiert als:
+\begin{equation}
+    (x_1 * x_2)[k] = \sum_{n=-\infty}^{\infty} x_1[n] \cdot x_2[k-n]
+\end{equation}
+Das Vorgehen ist jedoch sehr ähnlich zum kontinuierlichen Fall, da hier die eine Folge Wert für Wert über die andere geschoben wird. Bei jedem Schritt wird die Summe der Produkte der überlappenden Werte gebildet.
 
 Für die diskrete Faltung zweier Abtastfolgen gilt der Faltungssatz der z-Transformation. Er sagt aus, dass die Faltung der zwei Abtastfolgen $x_1[k]$ und $x_2[k]$ im Zeitbereich der Multiplikation der zugehörigen Bildfunktionen im Frequenzbereich entspricht:
 \begin{equation}
     x_1[k] * x_2[k] \TransformHoriz X_1(z) \cdot X_2(z)
 \end{equation}
 
-Diese Regel vereinfacht stark das Rechnen mit Abtastfolgen und ist ein wichtiger Grund, die z-Transformation zu beherrschen.
+Diese Regel vereinfacht stark das Rechnen mit Abtastfolgen, da man die Faltungssummen nicht explizit berechnen muss.
 
 
 \addvspace{1cm}
