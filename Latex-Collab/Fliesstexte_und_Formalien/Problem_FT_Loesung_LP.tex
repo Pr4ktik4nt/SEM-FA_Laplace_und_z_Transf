@@ -1,27 +1,27 @@
 \section{Laplace Transformation}
 \subsection{Problem der Fourier Transformation}
 
-Die Fourier Tansformaiton wird dazu genutzt die Ähnlichkeit eines Signals zu harmonischen Schwingungen unterschiedlicher Frequenzen zu bestimmen. Sie stößt jedoch an ihre Grenzen, wenn der Anwender versucht ein Signal zu analysieren, welches im Unendlichen nicht gegen Null strebt.
+Die Fourier Tansformation wird dazu genutzt die Ähnlichkeit eines Signals zu harmonischen Schwingungen unterschiedlicher Frequenzen zu bestimmen. Sie stößt jedoch an ihre Grenzen, wenn der Anwender versucht ein Signal zu analysieren, welches im Unendlichen nicht gegen Null strebt.
 
 \begin{equation}
     \int_{-\infty}^{\infty} |f(t)| \, dt < \infty
     \label{eq:abs_integrierbarkeit}
     \end{equation}
 
-Häufig tritt dieses Problem beim lösen von Differentialgleichungen im Zeitbereich auf. 
+Häufig tritt dieses Problem beim Lösen von Differentialgleichungen im Zeitbereich auf. 
 In den sich ergebenden Lösungen sind zu einem großen Teil Exponentialfunktionen enthalten. 
-Wollen wir diese über die Fourier Transformation lösen stoßen wir auf das Problem, dass mindestens einer der stationären Endwerte ungleich Null ist.
+Wollen wir diese über die Fourier Transformation lösen, stoßen wir auf das Problem, dass mindestens einer der stationären Endwerte ungleich Null ist.
 
 \begin{equation}
     f(t) = e^t
     \label{eq:exp_funktion}
     \end{equation}
 
-Versucht man die Funktion via Fourier zu transfomieren beläuft sich ihr Grenzwert gegen 
+Versucht man die Funktion via Fourier zu transfomieren, beläuft sich ihr Grenzwert gegen 
 $\infty$. 
 
 \begin{equation}
-    \int_{-\infty}^{\infty} e^t \, dt
+    \int_{-\infty}^{\infty} e^t \, dt \to\infty
     \label{eq:exp_function_infty}
     \end{equation}
     
@@ -32,7 +32,10 @@ Im Allgemeinen vergleicht die Fouriertransformation eine Funktion mit einer harm
 \textbf{Lösungsansatz durch Laplace Transformation}
 
 Ein Mittel zur Lösung dieses Problems ist das Anweden der Laplace Transformation. 
-Die Laplace Transformation im Vergleich zur Fouriertransformation vergleicht eine Funktion nicht mit einer harmonischen, sondern mit einer harmonisch gedämpften Schwingung. Um die Laplace Transformation zu verwenden, muss man die Fourier Transformation um zwei Faktoren erweitern:
+Die Laplace-Transformation vergleicht eine Funktion nicht mit einer rein harmonischen Schwingung, wie es bei der Fourier-Transformation der Fall ist, sondern mit einer harmonisch \emph{gedämpften} Schwingung. Um von der Fourier- zur Laplace-Transformation überzugehen, wird der Kern der Fourier-Transformation um einen Faktor \( e^{-(\delta + j\omega)t} \) erweitert. 
+
+Dabei stellt der Realteil \(-\delta t\) die Dämpfung dar, durch die die Funktion abklingt und somit integrierbar wird. Der Imaginärteil \(-j\omega t\) mit \(\omega\) als Kreisfrequenz dient, wie in der Fourier-Transformation, zur Zerlegung der Funktion in ihre Frequenzanteile.
+ 
 
 \begin{equation}
     \int_{-\infty}^{\infty} f(t) e^{-\delta t} e^{-j \omega t} \, dt
@@ -60,7 +63,7 @@ Da wir in der Praxis häufig Differentialgleichungen mit der Laplace Transformat
     \label{eq:ft_definition}
     \end{equation}
 
-Aufgrund dieser Bedingung kann man die untere Grenze -0 (um den auf die Null defniierten Dirac Sprung zu berücksichtigen) setzen. Dabei ist $\delta + j\omega$ = s definiert.
+Aufgrund dieser Bedingung kann man die untere Grenze 0 setzen. Dabei ist $\delta + j\omega$ = s definiert.
 
 \begin{equation}
     \int_{-\infty}^{\infty} f(t) e^{-\delta t} e^{-j \omega t} \, dt

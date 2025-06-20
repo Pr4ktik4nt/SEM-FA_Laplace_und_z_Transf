@@ -48,7 +48,7 @@ Diese Gleichung zeigt ein konkretes Beispiel der Streckungsregel, angewendet auf
     \label{eq:laplace_exponentielle_modulation}
     \end{equation}
 
-Diese Gleichung stellt die \textbf{Dämpfungsregel} der Laplace-Transformation dar. Sie besagt, dass die Multiplikation einer Zeitfunktion $f(t)$ mit einem exponentiellen Ausdruck $\exp(-at)$ im Zeitbereich dazu führt, dass die Laplace-Transformierte von $f(t)$ im Bildbereich um $a$ nach rechts verschoben wird, also $\mathcal{L}(f(t)) \to \mathcal{L}(f)(s + a)$. Diese Regel erlaubt es, die Transformierte zusammengesetzter Funktionen effizient zu bestimmen.
+Diese Gleichung stellt die \textbf{Dämpfungsregel} der Laplace-Transformation dar. Sie besagt, dass die Multiplikation einer Zeitfunktion $f(t)$ mit einem exponentiellen Ausdruck $\exp(-at)$ im Zeitbereich dazu führt, dass die Laplace-Transformierte von $f(t)$ im Bildbereich um $a$ nach links verschoben wird, also $\mathcal{L}(f(t)) \to \mathcal{L}(f)(s + a)$. Diese Regel erlaubt es, die Transformierte zusammengesetzter Funktionen effizient zu bestimmen.
 
 
 Beispiel:
@@ -115,12 +115,22 @@ Beispiel:
 \addvspace{1cm}
 \textbf{Faltung}
 
+Um die Faltungsregel einzuführen, wollen wir zunächst einmal Faltung definieren. Die Faltung zweier Funktionen \( f(t) \) und \( g(t) \) ist definiert als:
+
+\begin{equation}
+(f * g)(t) = \int_{0}^{t} f(\tau) \, g(t - \tau) \, d\tau
+\end{equation}
+
+Die Überlagerung zweier Funktionen, von denen eine zeitlich verschoben ist, ermöglicht in der Systemtheorie beispielsweise das Ermitteln einer Impulsantwort g(t) auf ein Eingangssignal f(t). In der Signalverarbeitung kann die Faltung mit einem bekannten Impuls wiederum zur Filterung von Signalen (Rauschunterdrückung, Frequenzbegrenzung und weiter Nutzungsmöglichkeiten) verwendet werden.
+
+
 \begin{equation}
     [\mathcal{L}(f * g)](s) = [\mathcal{L}f](s) \cdot [\mathcal{L}g](s)
     \label{eq:laplace_faltung}
     \end{equation}
     
 Die Faltungseigenschaft der Laplace-Transformation erlaubt es, das Faltungsintegral zweier Funktionen im Zeitbereich in eine einfache Multiplikation ihrer jeweiligen Laplace-Transformierten im Bildbereich umzuwandeln. Im gezeigten Beispiel wird die Faltung zweier identischer Exponentialfunktionen $e^t$ berechnet. Dabei ergibt sich, dass die Laplace-Transformierte des Faltungsprodukts $(e^t * e^t)(t)$ gleich der Laplace-Transformierten von $t e^t$ ist, was durch beide Rechenwege bestätigt wird.
+So kann vereinfacht gerechnet und dann rücktransformiert werden.
 
 Beispiel:
     
