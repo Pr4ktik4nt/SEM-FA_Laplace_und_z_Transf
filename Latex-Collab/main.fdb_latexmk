@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1749026929.2981 "main.aux" "main.bbl" "main" 1749026930.12283 0
+["bibtex main"] 1749121667.84284 "main.aux" "main.bbl" "main" 1749121668.69948 0
   "./literatur.bib" 1748948085.92765 2160 759979e4288d39522e9773421eb4635e ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1741388039 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1749026929.96744 9098 8f4190966be1d0ad2ef1bb4644bf2783 "pdflatex"
+  "main.aux" 1749121668.54218 9098 8f4190966be1d0ad2ef1bb4644bf2783 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1749026929.3547 "/Users/ben/Documents/HSNR/SEM_FA/SEM-FA_Laplace_und_z_Transf/Latex-Collab/main.tex" "main.pdf" "main" 1749026930.12294 0
+["pdflatex"] 1749121667.89539 "/Users/ben/Documents/HSNR/SEM_FA/SEM-FA_Laplace_und_z_Transf/Latex-Collab/main.tex" "main.pdf" "main" 1749121668.69958 0
   "/Users/ben/.texlive2025/texmf-var/fonts/pk/ljfour/public/trsym/trsy10.600pk" 1748028368.4181 456 6b8b712b6e0c9c8fa2b02ec98d8c4087 ""
   "/Users/ben/Documents/HSNR/SEM_FA/SEM-FA_Laplace_und_z_Transf/Latex-Collab/main.tex" 1748863685.33817 3732 74594c05848addeea17e578288e0d934 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1741388039 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -135,7 +135,7 @@
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/url/url.sty" 1741388039 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/web2c/texmf.cnf" 1741388039 42151 79f67285bdd95beca4d137b380b4b9e5 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1741388039 3346141 1288109d02d1c772df65535881471649 ""
-  "Anlagen/Deckbild.png" 1745164647.77975 96537 a246606fee04eb9a9e7bbaba7f24b511 ""
+  "Anlagen/Deckbild.png" 1749121641.18327 128647 eca78630901e04c9be6524e259a06a6b ""
   "Anlagen/Kondensator.png" 1745166063.16076 4801 295261894369bc9d7eb9b66a400eb8b3 ""
   "Anlagen/Spannungsquelle.png" 1745166063.16095 5970 c819f3c8d3d3902ec0dc99062cb8c1ad ""
   "Anlagen/Spule.png" 1745166063.16112 5765 4b26f87f120df580889ad7d453bb1ae9 ""
@@ -161,11 +161,11 @@
   "Fliesstexte_und_Formalien/ZT_Korrespondenzen.tex" 1748947249.94861 5937 07023d52914a505ba66c4068005b2754 ""
   "Fliesstexte_und_Formalien/deckblatt.tex" 1748863987.9411 444 57f022a77bd4b2312789ac15be9d7e87 ""
   "Fliesstexte_und_Formalien/inverse_ZT.tex" 1748947772.68817 2942 22b702f5df7274a8dda32e138632a7ce ""
-  "main.aux" 1749026929.96744 9098 8f4190966be1d0ad2ef1bb4644bf2783 "pdflatex"
-  "main.bbl" 1749026929.35293 2184 ccc4a98aa317f37431aad3705df14299 "bibtex main"
-  "main.out" 1749026929.96851 3624 70e5e00e037ed5bfcbdd02c9891326ce "pdflatex"
+  "main.aux" 1749121668.54218 9098 8f4190966be1d0ad2ef1bb4644bf2783 "pdflatex"
+  "main.bbl" 1749121667.8936 2184 ccc4a98aa317f37431aad3705df14299 "bibtex main"
+  "main.out" 1749121668.54322 3624 70e5e00e037ed5bfcbdd02c9891326ce "pdflatex"
   "main.tex" 1748863685.33817 3732 74594c05848addeea17e578288e0d934 ""
-  "main.toc" 1749026929.96868 2433 3f3158a5bae7e8a4585d04cd043a7d71 "pdflatex"
+  "main.toc" 1749121668.54338 2433 3f3158a5bae7e8a4585d04cd043a7d71 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
