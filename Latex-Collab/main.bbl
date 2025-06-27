@@ -29,9 +29,6 @@ F.~Stopp, \emph{Mathematik für Ingenieure, Naturwissenschaftler, Ökonomen und 
 \bibitem{manual1}
 E.~Ahle, \emph{Elektrische Netzwerkelemente}, 2015.
 
-\bibitem{exercise1}
-------, ``Systemtheorie (sth) Übungsaufgaben mit lösungen,'' 2024, bla.
-
 \bibitem{book2}
 \BIBentryALTinterwordspacing
 H.~Ulrich and S.~Ulrich, \emph{Laplace-Transformation, Diskrete Fourier-Transformation und z-Transformation}.\hskip 1em plus 0.5em minus 0.4em\relax Wiesbaden: Springer Fachmedien Wiesbaden, 2022. [Online]. Available: \url{https://doi.org/10.1007/978-3-658-31877-2_6}
@@ -44,5 +41,8 @@ A.~Oppenheim and R.~Schafer, \emph{Zeitdiskrete Signalverarbeitung}.\hskip 1em p
 \BIBentryALTinterwordspacing
 M.~Meyer, \emph{Signalverarbeitung}.\hskip 1em plus 0.5em minus 0.4em\relax Wiesbaden: Vieweg+Teubner, 2009. [Online]. Available: \url{https://doi.org/10.1007/978-3-8348-9316-1}
 \BIBentrySTDinterwordspacing
+
+\bibitem{exercise1}
+E.~Ahle, ``Systemtheorie (sth) Übungsaufgaben mit lösungen,'' 2024, bla.
 
 \end{thebibliography}

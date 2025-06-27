@@ -1,7 +1,7 @@
 \addvspace{1cm}
-\subsection{Anwedung: Lösen von Differentialgleichungen}
+\subsection{Anwendung: Lösen von Differentialgleichungen}
 
-Was sind Differentialgleichungen? Differentialgleichungen sind solche Gleichungen, die aus Ableitungen derselben Funktion mit verschieden hohem Rang bestehen. Gegeben sein müssen dafür die Anfangsbedingungen bis zur Ableitung vor der mit dem höchsten Rang. Veranschaulichen lässt sich das an einem allgemeinen Beispiel einer DGL mit der zweiten Ableitung als höchster Ableitung:
+Was sind Differentialgleichungen? Differentialgleichungen sind solche Gleichungen, die aus Ableitungen der gesuchten Funktion mit verschieden hohem Rang bestehen. Dazu müssen die Anfangsbedingungen bis einschließlich zur Ableitung unterhalb der höchsten Ableitung bekannt sein. DIe Laplace Transformation funktioniert hier nur unter der Bedingung, dass alle Koeffizienten konstant sind.Veranschaulichen lässt sich das an einem allgemeinen Beispiel einer DGL mit der zweiten Ableitung als höchster Ableitung:
 
 \begin{equation}
 y''(t) + a y'(t) + b y(t) = f(t), \quad y(0) = y_0, \quad y'(0) = y_1
@@ -93,7 +93,7 @@ Nun wenden wir die Faltungsregel auf den ersten Term an:
 Zusammengefügt bekommen wir schließlich unsere allgemeine Lösung:
 
 \[
-\Rightarrow y(t) = \frac{43}{41} \cdot e^{-\frac{1}{6}t} \cdot \left( 1 - e^{-\frac{41}{6}t} \right) + 3 \cdot e^{-\frac{1}{6}t}
+ y(t) = \frac{43}{41} \cdot e^{-\frac{1}{6}t} \cdot \left( 1 - e^{-\frac{41}{6}t} \right) + 3 \cdot e^{-\frac{1}{6}t}
 \]
     
 \addvspace{1cm}

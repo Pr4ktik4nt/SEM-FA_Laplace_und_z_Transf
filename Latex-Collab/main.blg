@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2025/Homebrew)
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: IEEEtran.bst
@@ -23,7 +23,7 @@ and the built_in function-call counts, 2638 in all, are:
 + -- 20
 - -- 10
 * -- 110
-:= -- 489
+:= -- 490
 add.period$ -- 13
 call.type$ -- 7
 change.case$ -- 3
@@ -32,7 +32,7 @@ cite$ -- 7
 duplicate$ -- 199
 empty$ -- 291
 format.name$ -- 13
-if$ -- 590
+if$ -- 589
 int.to.chr$ -- 0
 int.to.str$ -- 7
 missing$ -- 41
