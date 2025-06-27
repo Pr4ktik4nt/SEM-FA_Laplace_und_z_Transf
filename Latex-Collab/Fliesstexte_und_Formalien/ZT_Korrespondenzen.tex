@@ -10,10 +10,10 @@
         \hline
         Abtastwerte $x[k]$ & Z-Transformierte $X(z)$ & Konvergenzbereich \rule{0pt}{0.5cm} \\
         \hline 
-        Dirac-Impuls $\delta[k]$ & $1$ & $|z| \in \mathbb{R}$\rule{0pt}{0.5cm} \\
+        abgetasteter Dirac-Impuls $\delta[k]$ & $1$ & $|z| \in \mathbb{R}$\rule{0pt}{0.5cm} \\
         & & \\
         \hline
-        Sprungfunktion $\epsilon[k]$ & $\frac{z}{z-1}$ & $|z| > 1$\rule{0pt}{0.5cm} \\
+        abgetastete Sprungfunktion $\epsilon[k]$ & $\frac{z}{z-1}$ & $|z| > 1$\rule{0pt}{0.5cm} \\
              & & \\
         \hline
         $\epsilon[k] \cdot a^k$ & $\frac{z}{(z-a)}$ & $|z| > a$\rule{0pt}{0.5cm} \\
@@ -52,7 +52,7 @@
 Im Folgenden werden drei dieser Korrespondenzen beispielhaft näher betrachtet, um besser zu verstehen, wie diese zustande kommen.
 
 \addvspace{2cm}
- \textbf{Dirac-Impuls} \\
+ \textbf{abgetasteter Dirac-Impuls} \\
 
  \begin{minipage}[c]{0.5\textwidth}  $\delta[k] = \begin{cases}
         1 &, k=0 \\
@@ -77,7 +77,7 @@ Im Folgenden werden drei dieser Korrespondenzen beispielhaft näher betrachtet, 
     \cite[S.235]{book2}
 \addvspace{1cm}
 
-\textbf{Sprungfunktion} \\
+\textbf{abgetastete Sprungfunktion} \\
 \\
     \begin{minipage}[c]{0.5\textwidth}
         $\epsilon[k] = \begin{cases}
@@ -109,14 +109,14 @@ Im Folgenden werden drei dieser Korrespondenzen beispielhaft näher betrachtet, 
     \\
 
 
-\textbf{Sinus}
+\textbf{abgetasteter Sinus}
 \begin{figure}[H]
     \centering
         \includegraphics[width=0.6\textwidth]{Anlagen/ZT_sin_wkT.png}   
     \caption{abgetasteter Sinus für $t \geq 0$}
     \label{fig:ZT_sin_wk}
 \end{figure} 
-Zuletzt wird noch die etwas komplexere Korrespondenz der abgetasteten Sinusfunktion für $t \geq 0$ $(\epsilon[k]\cdot sin(\omega k T))$, wie sie in Abbildung \ref{fig:ZT_sin_wk} zu sehen ist, hergeleitet .
+Zuletzt wird noch die etwas komplexere Korrespondenz der abgetasteten Sinusfunktion für $t \geq 0$ \newline $(\epsilon[k]\cdot sin(\omega k T))$, wie sie in Abbildung \ref{fig:ZT_sin_wk} zu sehen ist, hergeleitet .
 
 Wir beginnen mit der Definition der mit Diracimpulsen abgetasteten Sinusfunktion. Dabei wird der Term $\omega T = 2\pi T \cdot f$ mit $\omega_0$ abgekürzt.
 

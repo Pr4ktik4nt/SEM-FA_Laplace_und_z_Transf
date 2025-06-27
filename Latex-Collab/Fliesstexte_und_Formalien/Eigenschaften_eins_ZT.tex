@@ -5,9 +5,7 @@
 Die Transformierte hat zunächst die Form einer Potenzreihe der komplexen Variablen $\frac{1}{z}$, wobei die Koeffizienten genau die Abtastwerte $x[k]$ sind. 
 Aus den Eigenschaften der Potenzreihe ergibt sich, dass es einen Kovergenzradius $r$ gibt, sodass $X(z)$ für $|z|>\frac{1}{r}$ konvergiert und für $|z|<\frac{1}{r}$ divergiert \cite[S.233]{book2}.
 
-Falls für $x[k]$ eine z-Transformierte $X(z)$ mit $|z|>\frac{1}{r}$ existiert, ist sie eine analytische Funktion und die einzige Bildfunktion von $x[k]$. Außerdem gilt unter dieser Bedingung auch die Umkehrung, dass es zu der Transformierten $X(z)$ genau eine Originalfolge $x[k]$ gibt \cite[S.233]{book2}
-Diese Einschränkung gilt nur für die Einseitige z-Transformation\cite[S.207]{book4}.
-\addvspace{3cm}
+\addvspace{5cm}
 \textbf{Abbildung der s-Ebene auf die z-Ebene}
 
 Da die z-Transformierte eines diskreten Signals direkt aus der Laplace-Transformierten des zeitkontinuierlichen Signals ableitet, ist es sinnvoll, zu betrachten, wie sich Punkte wie Pol- und Nullstellen aus der s-Ebene auf die z-Ebene übertragen.
@@ -16,13 +14,17 @@ Die Transformationsgleichungen von der s-Ebene in die z-Ebene ergeben sich wie f
 
 \begin{align}
     \notag
-    s = \sigma + j \omega &\text{ und } z = \xi + j \eta \\
+    s = \sigma + j \omega \text{ und }& \\
+    \notag
+    z = \xi + j \eta  = e^{sT}& = e^{\sigma + j \omega} = e^{\sigma} \cdot e^{j \omega} = r \cdot e^{j \omega}\\
      \notag
     \xi + j \eta = e^{(\sigma + j \omega)T} & = e^{\sigma T} \cdot [\cos(\omega T) + j \sin(\omega T)] \\
      \notag
     \xi = e^{\sigma T} \cdot \cos(\omega T) &\text{ und } \eta = e^{\sigma T} \cdot \sin(\omega T) \\
      \notag
 \end{align}
+
+Der Radius $r$ beschreibt dabei den Kreis um den Ursprung auf dem die z-Transformierte mit konstantem Realteil von $z$ liegt.
 
 \begin{itemize}
     \item Punkte mit konstantem Realteil $\sigma$ liegen auf einem Kreis mit dem Radius $\rho=e^{\sigma T}$.
@@ -42,7 +44,7 @@ Die Transformationsgleichungen von der s-Ebene in die z-Ebene ergeben sich wie f
 Damit die Transformierte konvergiert, muss die Summe der exponentiell gewichteten Abtastwerte absolut summierbar sein. Es muss also gelten:
 
 \begin{equation}
-    \sum_{k=0}^{\infty} |x[k]| \cdot |z|^{-k}| = \sum_{k=0}^{\infty} |x[k] \cdot r^{-k}| < \infty
+    \sum_{k=0}^{\infty} |x[k]| \cdot |z|^{-k} = \sum_{k=0}^{\infty} |x[k] \cdot r^{-k}| < \infty
     \label{eq:absKonvergenz}
 \end{equation}
 
@@ -51,8 +53,7 @@ Da die DFT den Faktor $r^{-k}$ nicht enthält, konvergiert sie nur, wenn die Abt
 Die ROC ist eine Kreisscheibe, die alle Radien $|z|$ umfasst, für die die oben genannte Summe konvergiert. Je höher der Radius ist, desto größer muss das abgetastete Signal gedämpft werden. An dieser Eigenschaft lässt sich auch erkennen, dass Systeme mit einer ROC, die außerhalb des Einheitskreises liegt, instabil sind.
 In manchen Fällen, kann die ROC auch bis $|z| \rightarrow  \infty$ oder bis zum Ursprung $|z|=0$ ausgedehnt sein.
 
-Wichtig zu erwähnen ist, dass die ROC keine Polstellen enthalten kann und immer ein zusammenhängender Bereich ist. Dabei wird das ROC durch die Polstellen begrenzt. Damit der Konvergenzbereich eine in beide Richtungen begrenzte Scheibe sein kann, muss X(z) also mindestens zwei Pole haben.
-
+Wichtig zu erwähnen ist, dass die ROC keine Polstellen enthalten kann und immer ein zusammenhängender Bereich ist. Dabei wird die ROC durch die Polstellen begrenzt.
 
 Für die z-Transformierte einer rechtsseitigen Folge, bei der $x[k] = 0$ für $k<0$ und die für $n \leq N < \infty$ nicht verschwindet, erstreckt sich die ROC von der äußersten Polstelle bis zu $\infty$.
 (Bei endlichen Folgen ist die ROC der zugehörigen z-Transformierten immer die gesamte z-Ebene mit möglichen Ausnahmen bei $z=0$ und $z=\infty$.) \cite[S.191]{book3}

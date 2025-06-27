@@ -33,7 +33,7 @@ Bei der Dämpfung ist zu beachten, dass sich der Konvergenzbereich ändert. Dies
 \addvspace{1cm}
 \textbf{Multiplikation im Zeitbereich}
 
-Wird jeder Abtastwert der Folge $x[k]$ mit dem Wert von $k$ gewichtet, so entspricht dies der Ableitung der Bildfunktion mit dem Vorfaktor $-z$:
+Wird jeder Abtastwert der Folge $x[k]$ mit dem Wert von $k$ gewichtet, so entspricht dies der komplexen Ableitung der Bildfunktion mit dem Vorfaktor $-z$:
 \begin{equation}
     x[k] \cdot k \TransformHoriz -z \cdot \frac{d}{dz} X(z)
 \end{equation}
@@ -43,8 +43,25 @@ Wird jeder Abtastwert der Folge $x[k]$ mit dem Wert von $k$ gewichtet, so entspr
 \begin{equation}
     \mathcal{Z}(k \cdot x[k]) = -z \cdot \frac{d}{dz} \left(\frac{z}{z-1}\right) = -z \cdot \left(\frac{(z-1) - z}{(z-1)^2}\right) = -z \cdot \left(\frac{-1}{(z-1)^2}\right) = \frac{z}{(z-1)^2}
 \end{equation}
+
+Die komplexe Ableitung ist etwas anders definiert, als die Ableitung einer rein reellen Funktion. Daher wird das Thema an dieser Stelle noch etwas ausgeführt.
+
+Damit eine komplexe Funktion $f(z)$ differenzierbar ist, müssen die Cauchy-Riemann-Gleichungen erfüllt sein.
+Hierzu wird die Variable $z = x +jy$ und $f(z) = u(x,y) + j \cdot v(x,y)$ in ihre Real- und Imaginärteile zerlegt.
+
+Die Cauchy-Riemann-Gleichungen mit den partiellen Ableitungen von $u$ und $v$ lauten dann:
+\begin{align}
+    \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \quad \text{und} \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
+\end{align}
+
+Ist die Funktion $f(z)$ differenzierbar, so kann man ihre komplexe Ableitung wie folgt bestimmen:
+\begin{equation}
+    f'(z) = \frac{\partial u}{\partial x} + j\cdot \frac{\partial v}{\partial x} = \frac{\partial v}{\partial y} - j\cdot \frac{\partial u}{\partial y}
+\end{equation}
+
 \addvspace{1cm}
 \textbf{Faltungssatz}
+
 Die diskrete Faltung zweier Folgen erfolgt nicht über ein Faltungsintegral, sondern über die Faltungssumme. Diese ist definiert als:
 \begin{equation}
     (x_1 * x_2)[k] = \sum_{n=-\infty}^{\infty} x_1[n] \cdot x_2[k-n]

@@ -3,20 +3,49 @@
 
 \textbf{Inverse z-Transformation}
 
-Auch bei der inversen Z-Transformation handelt es sich um eine lineare Transformation. Durch die Anwendung erhält man aus einer Bildfunktion $X(z)$ die zugehörige Zeitfolge $x[k]$ zurück. Die inverse z-Transformation ist definiert als:
+Auch bei der inversen Z-Transformation handelt es sich um eine lineare Transformation. Durch die Anwendung erhält man aus einer Bildfunktion $X(z)$ die zugehörige Urbildfolge $x[k]$ zurück. Die inverse z-Transformation ist definiert als:
 
 \begin{equation}
     \label{eq:inverse_z_transformation}
     \mathcal{Z}^{-1}\{X(z)\} = x[k] = \frac{1}{2\pi j} \oint_{C} X(z) \cdot z^{k-1} dz
 \end{equation}
 
-Die Rücktransformation erfolgt über die Integration entlang eines geschlossenen Pfades $C$ im mathematisch positiven Sinn um den Ursprung im Konvergenzbereich der von $X(z)$. Die Lösung über das Ringintegral ist recht kompliziert und wird in der Regel nur verwendet, wenn keine andere Möglichkeit besteht \cite[S.246]{book2}.
+Die Rücktransformation erfolgt über die Integration entlang eines geschlossenen Pfades $C$ im mathematisch positiven Sinn um den Ursprung im Konvergenzbereich der von $X(z)$. Das Ringintegral lässt sich zum Beispiel über das Residuenkalkül lösen, welches ein Werkzeug aus der Funktionentheorie ist. Diese Methode ist allerdings sehr kompliziert. Es gibt in der Regel einfachere Methoden, mit denen wir uns hier befassen wollen \cite[S.246]{book2}.
 \addvspace{1cm}
 
 \textbf{weitere Methoden zur Rücktransformation}
 
-In der Praxis findet die Rücktransformation meist über Korrespondenzen, wie in der Tabelle \ref{tab:ZT_Korrespondenzen} angegeben statt.
-Liegt $X(z)$ noch nicht in der Form der Korrespondenzen vor, so muss sie entweder über die in Abschnitt \ref{sec:Sätze_der_ZT} genannten Sätze umgeformt werden oder durch eine Partialbruchzerlegung in die benötigte Form gebracht werden \cite[S.246]{book2}.
+In der Praxis findet die Rücktransformation meist über \textbf{Korrespondenzen}, wie in der Tabelle \ref{tab:ZT_Korrespondenzen} angegeben statt.
+Liegt $X(z)$ noch nicht in der Form der Korrespondenzen vor, so muss sie entweder über die in Abschnitt \ref{sec:Sätze_der_ZT} genannten Sätze umgeformt werden oder durch eine \textbf{Partialbruchzerlegung} in die benötigte Form gebracht werden \cite[S.246]{book2}.
+
+Über die Definition der Potenzreihe lässt sich auch noch ein weiterer Ansatz zur Rücktransformation formulieren. Dabei kann das k-te Element der Urbildfolge $x[k]$ über die k-te Ableitung der Bildfunktion an der Stelle $\frac{1}{z}$ bestimmt werden:
+
+Durch die Definition der z-Transformation ergibt sich:
+\begin{equation}
+    X(\frac{1}{z}) = \sum_{k=0}^{\infty} x[k] \cdot \left(\frac{1}{z}\right)^{-k} = \sum_{k=0}^{\infty} x[k] \cdot z^{k} = x[0] + x[1] \cdot z + x[2] \cdot z^2 + \ldots
+\end{equation}
+
+Leitet man die Funktion $X(\frac{1}{z})$ nun k-mal ab und bildet den Grenzwert für $z \rightarrow 0$, so erhält man $k! \cdot x[k]$:
+\begin{align}
+    \notag
+    \lim_{z \to 0} F(\frac{1}{z}) &= x[0] + x[1] \cdot z + x[2] \cdot z^2 + x[3] \cdot z^3 + x[4] \cdot z^4 + \ldots = 0! x[0] \\
+    \notag
+    \lim_{z \to 0} \frac{d}{dz} F(\frac{1}{z}) &= 1 \cdot x[1] + 2 \cdot x[2] \cdot z + 3 \cdot x[3] \cdot z^2 + 4 \cdot x[4] \cdot z^3 + \ldots = 1! \cdot x[1] \\
+    \notag
+    \lim_{z \to 0} \frac{d^2}{dz^2} F(\frac{1}{z}) &= 2 \cdot 1 \cdot x[2] + 3 \cdot 2 \cdot x[3] \cdot z + 4 \cdot 3 \cdot x[4] \cdot z^2 + \ldots = 2! \cdot x[2]
+     \\ \notag
+    \lim_{z \to 0} \frac{d^3}{dz^3} F(\frac{1}{z}) &= 3 \cdot 2 \cdot 1 \cdot x[3] + 4 \cdot 3 \cdot 2 \cdot x[4] \cdot z + \ldots = 3! \cdot x[3] \\
+    \notag
+\end{align}
+
+Über diesen Zusammenhang läst sich die folgende Berechnungsvorschrift für die Elemente der Urbildfolge $x[k]$ formulieren:
+\begin{equation}
+    \boxed{
+    x[k] = \frac{1}{k!} \cdot \lim_{z \to 0} \frac{d^k}{dz^k} F(\frac{1}{z})
+    }
+\end{equation}  
+
+Dazu sei noch erwähnt, dass diese Ableitungsmethode nur sinnvoll ist, wenn man ein Bildungsgesetz für die k-te Ableitung von $F(\frac{1}{z})$ finden kann.
 
 \addvspace{1cm}
 
