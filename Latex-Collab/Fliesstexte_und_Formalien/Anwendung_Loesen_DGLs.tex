@@ -1,7 +1,15 @@
 \addvspace{1cm}
 \subsection{Anwendung: Lösen von Differentialgleichungen}
 
-Was sind Differentialgleichungen? Differentialgleichungen sind solche Gleichungen, die aus Ableitungen der gesuchten Funktion mit verschieden hohem Rang bestehen. Dazu müssen die Anfangsbedingungen bis einschließlich zur Ableitung unterhalb der höchsten Ableitung bekannt sein. DIe Laplace Transformation funktioniert hier nur unter der Bedingung, dass alle Koeffizienten konstant sind.Veranschaulichen lässt sich das an einem allgemeinen Beispiel einer DGL mit der zweiten Ableitung als höchster Ableitung:
+Was sind Differentialgleichungen? Differentialgleichungen sind solche Gleichungen, die aus Ableitungen der gesuchten Funktion mit verschieden hohem Rang bestehen. 
+
+Die allgemeine Form einer Differentialgleichung mit einem Einheitssprung als Eingang lässt sich folgendermaßen darstellen:
+
+\begin{equation}
+  y^{(n)}(t) + \dots + a_1 y'(t) + a_0 y(t) = f(t)
+\end{equation}
+
+Dazu müssen die Anfangsbedingungen bis einschließlich zur Ableitung unterhalb der höchsten Ableitung bekannt sein. Die Laplace Transformation funktioniert hier nur unter der Bedingung, dass alle Koeffizienten konstant sind.Veranschaulichen lässt sich das an einem allgemeinen Beispiel einer DGL mit der zweiten Ableitung als höchster Ableitung:
 
 \begin{equation}
 y''(t) + a y'(t) + b y(t) = f(t), \quad y(0) = y_0, \quad y'(0) = y_1
@@ -21,7 +29,7 @@ Um die Laplace Transformierte der Gleichung zu erhalten, wenden wir nun ein paar
 \end{align*}
 \cite[S.~886]{buch1}
 
-Durch Rücktransformation erhält man dann eine Lösung des Ursprungsproblems. Wenn man im Laplace-Bereich zwei Funktionen multipliziert, entspricht das im Zeitbereich einer Faltung dieser Funktionen. Man wendet dabei das sogenannte Faltungstheorem an:
+Durch Rücktransformation erhält man dann eine Lösung des Ursprungsproblems. Wenn man im Laplace-Bereich zwei Funktionen multipliziert, entspricht das im Zeitbereich einer Faltung dieser Funktionen. Man wendet dabei das sogenannte Faltungstheorem (siehe S.7) an:
 
 \[
 \mathcal{L}^{-1} \{ F(s) \cdot G(s) \}(t) = f(t) * g(t)

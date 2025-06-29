@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  27 JUN 2025 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  29 JUN 2025 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -541,25 +541,25 @@ l.68 \]
 [7]) (./Fliesstexte_und_Formalien/Anwendung_Loesen_DGLs.tex
 
 [8]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 49.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 57.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 2495) in paragraph at lines 104--105
+
+[9{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \hbox (badness 2495) in paragraph at lines 112--113
 []\OT1/lmr/m/n/10 Au^^Yerdem sind Funk-tio-nen mit ex-po-nen-ti-el-lem Wachs-tum zwar Laplace-, aber nicht Fourier-
  []
 
 ) (./Fliesstexte_und_Formalien/Grenzwertsaetze.tex
 
-[9{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-
 [10]) (./Fliesstexte_und_Formalien/Anwedung_Systemtheorie_RGT.tex
-<Anlagen/ohmscher_Widerstand.png, id=185, 116.23425pt x 68.05424pt>
+<Anlagen/ohmscher_Widerstand.png, id=186, 116.23425pt x 68.05424pt>
 File: Anlagen/ohmscher_Widerstand.png Graphic file (type png)
 <use Anlagen/ohmscher_Widerstand.png>
 Package pdftex.def Info: Anlagen/ohmscher_Widerstand.png  used on input line 21.
 (pdftex.def)             Requested size: 109.2601pt x 63.97409pt.
-<Anlagen/Spule.png, id=187, 116.23425pt x 56.00925pt>
+<Anlagen/Spule.png, id=188, 116.23425pt x 56.00925pt>
 File: Anlagen/Spule.png Graphic file (type png)
 <use Anlagen/Spule.png>
 Package pdftex.def Info: Anlagen/Spule.png  used on input line 43.
@@ -569,12 +569,12 @@ Overfull \hbox (7.14021pt too wide) in paragraph at lines 55--62
 [][]$ 
  []
 
-<Anlagen/Kondensator.png, id=189, 117.43875pt x 71.0655pt>
+<Anlagen/Kondensator.png, id=190, 117.43875pt x 71.0655pt>
 File: Anlagen/Kondensator.png Graphic file (type png)
 <use Anlagen/Kondensator.png>
 Package pdftex.def Info: Anlagen/Kondensator.png  used on input line 66.
 (pdftex.def)             Requested size: 109.2601pt x 66.11623pt.
-<Anlagen/Spannungsquelle.png, id=191, 86.12175pt x 89.133pt>
+<Anlagen/Spannungsquelle.png, id=192, 86.12175pt x 89.133pt>
 File: Anlagen/Spannungsquelle.png Graphic file (type png)
 <use Anlagen/Spannungsquelle.png>
 Package pdftex.def Info: Anlagen/Spannungsquelle.png  used on input line 86.
@@ -582,12 +582,12 @@ Package pdftex.def Info: Anlagen/Spannungsquelle.png  used on input line 86.
 
 
 [11 <./Anlagen/ohmscher_Widerstand.png> <./Anlagen/Spule.png> <./Anlagen/Kondensator.png>]
-<Anlagen/Stromquelle.png, id=201, 81.30376pt x 84.315pt>
+<Anlagen/Stromquelle.png, id=202, 81.30376pt x 84.315pt>
 File: Anlagen/Stromquelle.png Graphic file (type png)
 <use Anlagen/Stromquelle.png>
 Package pdftex.def Info: Anlagen/Stromquelle.png  used on input line 106.
 (pdftex.def)             Requested size: 109.2601pt x 113.31598pt.
-<Anlagen/System_mit_1_E_Speicher.png, id=203, 261.97874pt x 187.902pt>
+<Anlagen/System_mit_1_E_Speicher.png, id=204, 261.97874pt x 187.902pt>
 File: Anlagen/System_mit_1_E_Speicher.png Graphic file (type png)
 <use Anlagen/System_mit_1_E_Speicher.png>
 Package pdftex.def Info: Anlagen/System_mit_1_E_Speicher.png  used on input line 121.
@@ -595,17 +595,17 @@ Package pdftex.def Info: Anlagen/System_mit_1_E_Speicher.png  used on input line
 
 
 [12 <./Anlagen/Spannungsquelle.png> <./Anlagen/Stromquelle.png> <./Anlagen/System_mit_1_E_Speicher.png>]
-<Anlagen/Übertragungssysteme_in_Reihe.png, id=213, 354.123pt x 94.55325pt>
+<Anlagen/Übertragungssysteme_in_Reihe.png, id=214, 354.123pt x 94.55325pt>
 File: Anlagen/Übertragungssysteme_in_Reihe.png Graphic file (type png)
 <use Anlagen/Übertragungssysteme_in_Reihe.png>
 Package pdftex.def Info: Anlagen/Übertragungssysteme_in_Reihe.png  used on input line 158.
 (pdftex.def)             Requested size: 227.62206pt x 60.7779pt.
-<Anlagen/Übertragungssysteme_parallel.png, id=215, 317.38576pt x 160.80075pt>
+<Anlagen/Übertragungssysteme_parallel.png, id=216, 317.38576pt x 160.80075pt>
 File: Anlagen/Übertragungssysteme_parallel.png Graphic file (type png)
 <use Anlagen/Übertragungssysteme_parallel.png>
 Package pdftex.def Info: Anlagen/Übertragungssysteme_parallel.png  used on input line 165.
 (pdftex.def)             Requested size: 227.62206pt x 115.32497pt.
-<Anlagen/Übertragungssysteme_Rückkopplung.png, id=217, 314.3745pt x 133.6995pt>
+<Anlagen/Übertragungssysteme_Rückkopplung.png, id=218, 314.3745pt x 133.6995pt>
 File: Anlagen/Übertragungssysteme_Rückkopplung.png Graphic file (type png)
 <use Anlagen/Übertragungssysteme_Rückkopplung.png>
 Package pdftex.def Info: Anlagen/Übertragungssysteme_Rückkopplung.png  used on input line 172.
@@ -633,7 +633,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--62
 
  []
 
-<Anlagen/ZT_Impuls.png, id=256, 849.1725pt x 306.14375pt>
+<Anlagen/ZT_Impuls.png, id=257, 849.1725pt x 306.14375pt>
 File: Anlagen/ZT_Impuls.png Graphic file (type png)
 <use Anlagen/ZT_Impuls.png>
 Package pdftex.def Info: Anlagen/ZT_Impuls.png  used on input line 73.
@@ -643,7 +643,7 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 57--78
 []$[]$ $[]$
  []
 
-<Anlagen/ZT_Einheitssprung.png, id=258, 849.1725pt x 306.14375pt>
+<Anlagen/ZT_Einheitssprung.png, id=259, 849.1725pt x 306.14375pt>
 File: Anlagen/ZT_Einheitssprung.png Graphic file (type png)
 <use Anlagen/ZT_Einheitssprung.png>
 Package pdftex.def Info: Anlagen/ZT_Einheitssprung.png  used on input line 102.
@@ -673,7 +673,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--110
 
  []
 
-<Anlagen/ZT_sin_wkT.png, id=260, 849.1725pt x 306.14375pt>
+<Anlagen/ZT_sin_wkT.png, id=261, 849.1725pt x 306.14375pt>
 File: Anlagen/ZT_sin_wkT.png Graphic file (type png)
 <use Anlagen/ZT_sin_wkT.png>
 Package pdftex.def Info: Anlagen/ZT_sin_wkT.png  used on input line 115.
@@ -731,18 +731,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B4AAF8161894F27B305BE877DFC1F59F;3634.
  ) 
 Here is how much of TeX's memory you used:
- 13426 strings out of 473190
- 220424 string characters out of 5704335
+ 13427 strings out of 473190
+ 220435 string characters out of 5704335
  637943 words of memory out of 5000000
  36326 multiletter control sequences out of 15000+600000
  596381 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,79p,1307b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/ben/.texlive2025/texmf-var/fonts/pk/ljfour/public/trsym/trsy10.600pk></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr5.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (23 pages, 473915 bytes).
+Output written on main.pdf (23 pages, 474114 bytes).
 PDF statistics:
- 423 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 98 named destinations out of 1000 (max. 500000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
