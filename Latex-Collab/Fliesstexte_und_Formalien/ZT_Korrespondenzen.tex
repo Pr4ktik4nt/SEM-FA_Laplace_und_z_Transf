@@ -34,10 +34,10 @@
         $\epsilon[k] \cdot k \cdot e^{-ak}$ & $\frac{z\cdot e^{-a}}{\left(z-e^{-a}\right)^2}$ & $|z| > e^{-a}$\rule{0pt}{0.5cm} \\
              & & \\
         \hline
-        $\epsilon[k]\cdot sin(\omega_0 k)$ & $\frac{z\cdot sin(\omega_0)}{z^2 - 2\cdot cos(\omega_0)\cdot z + 1}$ & $|z| > 1$ \rule{0pt}{0.5cm}\\
+        $\epsilon[k]\cdot \sin(\omega_0 k)$ & $\frac{z\cdot \sin(\omega_0)}{z^2 - 2\cdot \cos(\omega_0)\cdot z + 1}$ & $|z| > 1$ \rule{0pt}{0.5cm}\\
              & & \\
         \hline
-        $\epsilon[k]\cdot cos(\omega_0 k)$ & $\frac{z\cdot cos(\omega_0)}{z^2 - 2\cdot cos(\omega_0)\cdot z + 1}$ & $|z| > 1$ \rule{0pt}{0.5cm}\\
+        $\epsilon[k]\cdot \cos(\omega_0 k)$ & $\frac{z\cdot \cos(\omega_0)}{z^2 - 2\cdot \cos(\omega_0)\cdot z + 1}$ & $|z| > 1$ \rule{0pt}{0.5cm}\\
              & & \\
         \hline
         $\epsilon[k] \cdot \frac{1}{k!}$ & $e^{\frac{1}{z}}$ & $|z| > 0$\rule{0pt}{0.5cm} \\
@@ -121,22 +121,22 @@ Zuletzt wird noch die etwas komplexere Korrespondenz der abgetasteten Sinusfunkt
 Wir beginnen mit der Definition der mit Diracimpulsen abgetasteten Sinusfunktion. Dabei wird der Term $\omega T = 2\pi T \cdot f$ mit $\omega_0$ abgekürzt.
 
 \begin{align}
-    x[k] = sin(\omega t) \cdot \delta(t-kT) = sin(k \cdot \omega T) = sin(k \omega_0), \text{           }k = 0, 1, 2, ... \\
+    x[k] = \sin(\omega t) \cdot \delta(t-kT) = \sin(k \cdot \omega T) = \sin(k \omega_0), \text{           }k = 0, 1, 2, ... \\
     \notag
 \end{align}
 
 Zum Rechnen wird die Eulersche Formel herangezogen:
 \begin{equation}
 \begin{aligned}
-    sin(k \omega_0) &= \frac{e^{j k \omega_0} - e^{-j k \omega_0}}{2j} \\
-    cos(k \omega_0) &= \frac{e^{j k \omega_0} + e^{-j k \omega_0}}{2}
+    \sin(k \omega_0) &= \frac{e^{j k \omega_0} - e^{-j k \omega_0}}{2j} \\
+    \cos(k \omega_0) &= \frac{e^{j k \omega_0} + e^{-j k \omega_0}}{2}
 \end{aligned}
 \end{equation}
 Damit ergibt sich für X(z):
 
 
 \begin{align}
-    X(z) = \mathcal{Z}\{x[k]\} &= \sum_{k=0}^{\infty} sin(k \omega_0) z^{-k} = \sum_{k=0}^{\infty} \frac{e^{j k \omega_0} - e^{-j k \omega_0}}{2j} z^{-k}
+    X(z) = \mathcal{Z}\{x[k]\} &= \sum_{k=0}^{\infty} \sin(k \omega_0) z^{-k} = \sum_{k=0}^{\infty} \frac{e^{j k \omega_0} - e^{-j k \omega_0}}{2j} z^{-k}
     \end{align}
     Durch die Linearität kann der Ausdruck in zwei Summen zerlegt werden. Anschließend können wir mit der Korrespondenz der Exponentialfolge die Transformation durchführen und den Term vereinfachen:
     \begin{equation}
@@ -145,8 +145,8 @@ Damit ergibt sich für X(z):
     &= \frac{1}{2j} \left( \frac{z}{z - e^{j\omega_0}} - \frac{z}{z - e^{-j\omega_0}}\right)\\
     &= \frac{z}{2j} \cdot \frac{(z - e^{-j\omega_0}) - (z - e^{j\omega_0})}{(z - e^{j\omega_0})(z - e^{-j\omega_0})}\\
     &= \frac{z}{2j}\cdot\frac{z-z + e^{j\omega_0}-e^{-j\omega_0}}{z^2 -z(e^{j\omega_0}+e^{-j\omega_0}) + e^{-j\omega_0}\cdot}\\
-    &= \frac{z}{2j}\cdot\frac{2j\cdot sin(\omega_0)}{z^2 -2z\cdot cos(\omega_0)+1}\\
-    &= \frac{z\cdot sin(\omega_0)}{z^2 -2z\cdot cos(\omega_0)+1} \\
-    &sin(\omega_0) \TransformHoriz \frac{z\cdot sin(\omega_0)}{z^2 -2z\cdot cos(\omega_0)+1}
+    &= \frac{z}{2j}\cdot\frac{2j\cdot \sin(\omega_0)}{z^2 -2z\cdot \cos(\omega_0)+1}\\
+    &= \frac{z\cdot \sin(\omega_0)}{z^2 -2z\cdot \cos(\omega_0)+1} \\
+    &\sin(\omega_0) \TransformHoriz \frac{z\cdot \sin(\omega_0)}{z^2 -2z\cdot \cos(\omega_0)+1}
 \end{aligned}
 \end{equation}

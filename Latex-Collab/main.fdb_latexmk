@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1751203982.78092 "main.aux" "main.bbl" "main" 1751204086.93988 0
-  "./literatur.bib" 1751203982.54038 2469 8a298639cf73995df1c94efee9a9ab4f ""
+["bibtex main"] 1751362090.81875 "main.aux" "main.bbl" "main" 1751362469.56683 0
+  "./literatur.bib" 1751362090.6097 2481 5f3cf92a3c679f712b4f7b7f8a680641 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1741388039 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1751204086.75042 7850 57e347e55abb0d476f79180ace6c0f50 "pdflatex"
+  "main.aux" 1751362469.38439 7850 57e347e55abb0d476f79180ace6c0f50 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1751204086.00122 "/Users/ben/Documents/HSNR/SEM_FA/SEM-FA_Laplace_und_z_Transf/Latex-Collab/main.tex" "main.pdf" "main" 1751204086.94001 0
+["pdflatex"] 1751362468.65951 "/Users/ben/Documents/HSNR/SEM_FA/SEM-FA_Laplace_und_z_Transf/Latex-Collab/main.tex" "main.pdf" "main" 1751362469.56694 0
   "/Users/ben/.texlive2025/texmf-var/fonts/pk/ljfour/public/trsym/trsy10.600pk" 1748028368.4181 456 6b8b712b6e0c9c8fa2b02ec98d8c4087 ""
   "/Users/ben/Documents/HSNR/SEM_FA/SEM-FA_Laplace_und_z_Transf/Latex-Collab/main.tex" 1748863685.33817 3732 74594c05848addeea17e578288e0d934 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1741388039 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -148,24 +148,24 @@
   "Anlagen/Übertragungssysteme_Rückkopplung.png" 1745166063.16194 10307 d08879bd874d8f262db45c55fc540835 ""
   "Anlagen/Übertragungssysteme_in_Reihe.png" 1745166063.1622 8873 eb09bccf480311c51a18cebc30035d35 ""
   "Anlagen/Übertragungssysteme_parallel.png" 1745166063.16244 11790 43dd8d0c7c773f4365179c06f107a083 ""
-  "Fliesstexte_und_Formalien/Allgemeine_Korrespondenzen.tex" 1751035188.55248 5306 40201d0f6f9f07b156a24e0a6ad74752 ""
+  "Fliesstexte_und_Formalien/Allgemeine_Korrespondenzen.tex" 1751362468.48414 5289 0be91d1f5b0615c8cb6d1745ac60a6db ""
   "Fliesstexte_und_Formalien/Anwedung_Systemtheorie_RGT.tex" 1751203594.28979 5600 fbb806ccbc49d8cc61ae562069941b3a ""
   "Fliesstexte_und_Formalien/Anwendung_Loesen_DGLs.tex" 1751203594.29002 5303 d7bbde90ced64f99e554e757e04dd7c0 ""
   "Fliesstexte_und_Formalien/Definiton_LP_Transformation.tex" 1751035188.55311 1079 0e507e76c97e1e22a03264cec67e3b14 ""
   "Fliesstexte_und_Formalien/Eigenschaften_eins_ZT.tex" 1751038098.29545 3858 52cf2e08056cad852331f15893ab5e93 ""
-  "Fliesstexte_und_Formalien/Einfuehrung_z_Trafo.tex" 1751037307.35094 2505 a3291e30f942689aa918fe5695b1016a ""
+  "Fliesstexte_und_Formalien/Einfuehrung_z_Trafo.tex" 1751362360.60808 2552 549b03957fa7c03705cc4f6d56bbc09f ""
   "Fliesstexte_und_Formalien/Grenzwertsaetze.tex" 1751035188.55325 3383 064cff48280f45b6dd71c70411b5bd73 ""
-  "Fliesstexte_und_Formalien/Problem_FT_Loesung_LP.tex" 1751203594.29018 3581 62bfaa643d87a736a70163385cc2eea8 ""
+  "Fliesstexte_und_Formalien/Problem_FT_Loesung_LP.tex" 1751362405.10174 3580 d03afdf0b2ea0ba67f9673f877cd102c ""
   "Fliesstexte_und_Formalien/Rechenregeln_der_LP_Transformation.tex" 1751203594.29043 6726 13207e415cdbbb03d5a5a421a5035b3b ""
   "Fliesstexte_und_Formalien/Saetze_der_ZT.tex" 1751040535.83992 4464 8e4ed9c5bde7f116afff47de9d10a7fb ""
-  "Fliesstexte_und_Formalien/ZT_Korrespondenzen.tex" 1751038344.26542 6009 d969d065295ebe5f115c2fbe2e141a33 ""
+  "Fliesstexte_und_Formalien/ZT_Korrespondenzen.tex" 1751361934.1426 6028 544e2f51e9e4595aaeb6f1553c703f3d ""
   "Fliesstexte_und_Formalien/deckblatt.tex" 1748863987.9411 444 57f022a77bd4b2312789ac15be9d7e87 ""
   "Fliesstexte_und_Formalien/inverse_ZT.tex" 1751204085.82663 4847 7de1aee656cc11c0a2941cc2097dd526 ""
-  "main.aux" 1751204086.75042 7850 57e347e55abb0d476f79180ace6c0f50 "pdflatex"
-  "main.bbl" 1751203982.84307 2186 9607c4def03605a9b2b959c7c4660271 "bibtex main"
-  "main.out" 1751204086.75155 3634 b4aaf8161894f27b305be877dfc1f59f "pdflatex"
+  "main.aux" 1751362469.38439 7850 57e347e55abb0d476f79180ace6c0f50 "pdflatex"
+  "main.bbl" 1751362090.87545 2198 4a719a8f493d6ecd8f9856b2021e1101 "bibtex main"
+  "main.out" 1751362469.38557 3634 b4aaf8161894f27b305be877dfc1f59f "pdflatex"
   "main.tex" 1748863685.33817 3732 74594c05848addeea17e578288e0d934 ""
-  "main.toc" 1751204086.75175 1737 d6c237d5df1d7a0dcb8b60eb033dcf2f "pdflatex"
+  "main.toc" 1751362469.38575 1737 d6c237d5df1d7a0dcb8b60eb033dcf2f "pdflatex"
   (generated)
   "main.aux"
   "main.log"
