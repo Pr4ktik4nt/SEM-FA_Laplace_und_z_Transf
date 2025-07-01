@@ -3,7 +3,9 @@
 Die z-Transformation ist eine Verallgemeinerung der DFT für Folgen und liefert für die Transformation einer größeren Klasse von Signalen ein Ergebnis. Sie erlaubt im Gegensatz zur DFT auch die Analyse von instabilen Systemen und ist damit weitestgehend äquivalent zur Laplace-Transformation für zeitkontinuierliche Systeme. Sie findet Anwendunng in der Analyse und Beschreibung zeitdiskreter Signale und Systeme, sowie beim Lösen linearer Differenzengleichungen. \cite[S.231]{book2} \cite[S.179]{book3}. %(+Zitiert aus Gref SIG Vorlesung)
 
 Wir betrachten eine kontinuierliche, stetige Funktion $x(t)$, die zu äquidistanten Zeitpunkten $t=k \cdot T$ abgetastet wurde. 
-Die betrachtete Funktion ist außerdem kausal, nimmt also nur für Werte von t ab dem Zeitpunkt $t=0$ Funktionswerte an. Es gilt: $x(t) = 0$ für $t<0$. Demnach beschränken wir uns im Folgenden auf die einseitige z-Transformation.
+Die betrachtete Funktion ist außerdem kausal, nimmt also nur für Werte von t ab dem Zeitpunkt $t=0$ Funktionswerte an. Es gilt: $x(t) = 0$ für $t<0$. 
+
+Die Zweiseitige z-Transformation unterscheidet sich nur dadurch von ihrem einseitigen Äquvialent, dass die Summe in der unten gezeigten Definition nicht bei $k=0$, sondern bei $k=\infty$ beginnt. Mit der Einschränkung der Kausalität zerfällt die zweiseitige z-Transformation zur einseitigen z-Transformation. Demnach beschränken wir uns im Folgenden auf die einseitige z-Transformation.
 
 Für die Auswertung der Funktionswerte von $x(t)$ an den Abtastzeitpunkten $t=kT$ werden verschobene Dirac-Impulse verwendet. Dabei werden die Abtastwerte durch die Folge $x[k]\quad\text{mit } k \in \mathbb{Z}$ dargestellt:
 \begin{equation}
